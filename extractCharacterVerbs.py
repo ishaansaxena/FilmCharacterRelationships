@@ -99,7 +99,12 @@ if __name__ == "__main__":
             verb = str(subject_verb_obj[1])
             if (subject + ' ' + movie_id) in movie_charNameToid_dict:
                 print("in here")
-                data_json[movie_charNameToid_dict[subject + ' ' + movie_id]+ ' ' + movie_id] = verb
+                data_json_key = movie_charNameToid_dict[subject + ' ' + movie_id]
+                if data_json_key in data_json:
+                    data_json[data_json_key].append(verb)
+                else:
+                   data_json[data_json_key] = []
+                   data_json[data_json_key].append(verb)
 
     with open('character_verb.json', 'w') as outfile:
         json.dump(data_json, outfile)
