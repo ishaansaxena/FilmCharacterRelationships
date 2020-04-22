@@ -4,4 +4,5 @@
 *.ipynb
 data/
 scratch/
+GoogleNews-vectors-negative300.bin
 

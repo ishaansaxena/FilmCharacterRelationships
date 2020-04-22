@@ -2,6 +2,7 @@ import spacy
 import textacy
 import neuralcoref
 import json
+from pycontractions import Contractions
 
 def read_cornell_data():
     f = open("data/cornell movie-dialogs corpus/movie_conversations.txt", "r", encoding="utf8", errors='ignore')
@@ -52,14 +53,22 @@ if __name__ == "__main__":
     movie_conversations_dict, movie_lines_dict, movie_charidToName_dict,movie_charNameToid_dict = read_cornell_data()
     neuralcoref.add_to_pipe(nlp)
     data_json = {}
-
+    cont = Contractions('GoogleNews-vectors-negative300.bin')
+    print("before loading models")
+    cont.load_models()
     # all_conversations = ""
     for movie_id in movie_conversations_dict:
         character_1, character_2, list_lines = movie_conversations_dict[movie_id]
         print("start conversation: ")
         conversation = ""
         for line_id in list_lines:
-            replaceiyou_line = movie_lines_dict[line_id][3]
+            cont_list = []
+            original_line = movie_lines_dict[line_id][3]
+            cont_list.append(original_line)
+            print(original_line)
+            remove_shortform = list(cont.expand_texts(cont_list))[0]
+            print(remove_shortform)
+            replaceiyou_line = remove_shortform
             char_speaking_id = movie_lines_dict[line_id][0]
             char_speaking_name = movie_lines_dict[line_id][2]
             opposing_character = character_1
