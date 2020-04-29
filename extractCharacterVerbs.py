@@ -82,7 +82,7 @@ def get_subject_verb_obj_list(sentences):
 
     text = nlp(coref_resolved_conversation)
 
-    print(coref_resolved_conversation)
+    #print(coref_resolved_conversation)
     text_ext = textacy.extract.subject_verb_object_triples(text)
     subject_verb_obj_list = list(text_ext)
 
@@ -124,7 +124,7 @@ def dialoges_char_verbs(cont,data_json,movie_conversations_dict,movie_lines_dict
             subject = str(subject_verb_obj[0])
             verb = str(subject_verb_obj[1])
             if (subject.lower() + ' ' + movie_id) in movie_charNameToid_dict:
-                data_json_key = movie_charNameToid_dict[subject + ' ' + movie_id]
+                data_json_key = movie_charNameToid_dict[subject.lower() + ' ' + movie_id]
                 if data_json_key in data_json:
                     data_json[data_json_key].append(verb)
                 else:
@@ -168,9 +168,8 @@ if __name__ == "__main__":
     movie_stage_direction = get_stage_direction()
     data_json = {}
     print('got stage direction')
-    #dialoges_char_verbs(cont,data_json,movie_conversations_dict, movie_lines_dict, movie_charidToName_dict, movie_charNameToid_dict)
+    dialoges_char_verbs(cont,data_json,movie_conversations_dict, movie_lines_dict, movie_charidToName_dict, movie_charNameToid_dict)
     stage_direction_char_verbs(cont,data_json,movie_stage_direction,movie_charNameToid_dict)
 
-    #with open('character_verb.json', 'w') as outfile:
-       # json.dump(data_json, outfile)
-    #write_character_verbs()
+    with open('character_verb.json', 'w') as outfile:
+       json.dump(data_json, outfile)
