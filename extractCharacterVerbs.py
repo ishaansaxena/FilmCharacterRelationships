@@ -182,7 +182,7 @@ if __name__ == "__main__":
     cont.load_models()
     print('done loading motherfucker')
     dialoges_char_verbs(cont,data_json,movie_conversations_dict, movie_lines_dict, movie_charidToName_dict, movie_charNameToid_dict)
-    with open('character_verb.json_dialogues', 'w') as outfile:
+    with open('character_verb_dialogues.json', 'w') as outfile:
        json.dump(data_json, outfile)
 
     '''print('extracted from dialoges')
