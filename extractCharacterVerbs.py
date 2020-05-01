@@ -19,12 +19,15 @@ def read_cornell_data():
         fields = conversation.split(" +++$+++ ")
         character_1 = fields[0]
         character_2 = fields[1]
-        movie = fields[2]
+        movie_id = fields[2]
 
         list_lines = fields[3]
         list_lines = list_lines[2:len(list_lines) - 3]
         list_lines = list_lines.split("\', \'")
-        movie_conversations_dict[movie] = (character_1, character_2, list_lines)
+        if(movie_id not in movie_conversations_dict):
+            movie_conversations_dict[movie_id] = []
+
+        movie_conversations_dict[movie_id].append((character_1, character_2, list_lines))
 
     for line in movie_lines:
         fields = line.split(" +++$+++ ")
@@ -79,10 +82,10 @@ def get_subject_verb_obj_list(sentences):
 
     doc1 = nlp(sentences)
     coref_resolved_conversation = doc1._.coref_resolved
-
+   # print(sentences)
+   # print('coref resolved')
+   # print(coref_resolved_conversation)
     text = nlp(coref_resolved_conversation)
-
-    #print(coref_resolved_conversation)
     text_ext = textacy.extract.subject_verb_object_triples(text)
     subject_verb_obj_list = list(text_ext)
 
@@ -91,45 +94,48 @@ def get_subject_verb_obj_list(sentences):
 def dialoges_char_verbs(cont,data_json,movie_conversations_dict,movie_lines_dict,movie_charidToName_dict,movie_charNameToid_dict):
     # all_conversations = ""
     for movie_id in movie_conversations_dict:
-        character_1, character_2, list_lines = movie_conversations_dict[movie_id]
-        print("start conversation: ")
-        conversation = ""
-        for line_id in list_lines:
-            cont_list = []
-            original_line = movie_lines_dict[line_id][3]
-            cont_list.append(original_line)
-           # print(original_line)
-            remove_shortform = list(cont.expand_texts(cont_list,precise=True))[0]
-           # print(remove_shortform)
-            replaceiyou_line = remove_shortform
-            char_speaking_id = movie_lines_dict[line_id][0]
-            char_speaking_name = movie_lines_dict[line_id][2]
-            opposing_character = character_1
-            if (opposing_character == char_speaking_id):
-                opposing_character = character_2
+        list_conversations_movie = movie_conversations_dict[movie_id]
+        print(movie_id)
+        for character_1, character_2, list_lines in list_conversations_movie:
+            conversation = ""
+            for line_id in list_lines:
+                cont_list = []
+                original_line = movie_lines_dict[line_id][3]
+                cont_list.append(original_line)
+               # print(original_line)
+                remove_shortform = list(cont.expand_texts(cont_list,precise=True))[0]
+                #print(remove_shortform)
+                replaceiyou_line = remove_shortform
+                char_speaking_id = movie_lines_dict[line_id][0]
+                char_speaking_name = movie_lines_dict[line_id][2]
+                opposing_character = character_1
+                if (opposing_character == char_speaking_id):
+                    opposing_character = character_2
 
-            opposing_character_name = movie_charidToName_dict[opposing_character]
-            if "I" in replaceiyou_line:
-                replaceiyou_line = replaceiyou_line.replace("I", char_speaking_name)
-            if "you" in replaceiyou_line:
-                replaceiyou_line = replaceiyou_line.replace("you", opposing_character_name)
-            if "You" in replaceiyou_line:
-                replaceiyou_line = replaceiyou_line.replace("You", opposing_character_name)
+                opposing_character_name = movie_charidToName_dict[opposing_character]
+                if "I" in replaceiyou_line:
+                    replaceiyou_line = replaceiyou_line.replace("I", char_speaking_name)
+                if "you" in replaceiyou_line:
+                    replaceiyou_line = replaceiyou_line.replace("you", opposing_character_name)
+                if "You" in replaceiyou_line:
+                    replaceiyou_line = replaceiyou_line.replace("You", opposing_character_name)
 
-            conversation += replaceiyou_line
+                conversation += replaceiyou_line
 
-        subject_verb_obj_list = get_subject_verb_obj_list(conversation)
+            subject_verb_obj_list = get_subject_verb_obj_list(conversation)
 
-        for subject_verb_obj in subject_verb_obj_list:
-            subject = str(subject_verb_obj[0])
-            verb = str(subject_verb_obj[1])
-            if (subject.lower() + ' ' + movie_id) in movie_charNameToid_dict:
-                data_json_key = movie_charNameToid_dict[subject.lower() + ' ' + movie_id]
-                if data_json_key in data_json:
-                    data_json[data_json_key].append(verb)
-                else:
-                    data_json[data_json_key] = []
-                    data_json[data_json_key].append(verb)
+            for subject_verb_obj in subject_verb_obj_list:
+               # print(subject_verb_obj)
+                subject = str(subject_verb_obj[0])
+                verb = str(subject_verb_obj[1])
+                if (subject.lower() + ' ' + movie_id) in movie_charNameToid_dict:
+                    data_json_key = movie_charNameToid_dict[subject.lower() + ' ' + movie_id]
+                    if data_json_key in data_json:
+                        data_json[data_json_key].append(verb)
+                    else:
+                        data_json[data_json_key] = []
+                        data_json[data_json_key].append(verb)
+
 
 def stage_direction_char_verbs(cont,data_json,movie_stage_direction_dict,movie_charNameToid_dict):
     for movie_id in movie_stage_direction_dict:
@@ -159,17 +165,26 @@ def stage_direction_char_verbs(cont,data_json,movie_stage_direction_dict,movie_c
                     data_json[data_json_key].append(verb)
 
 if __name__ == "__main__":
+    movie_conversations_dict, movie_lines_dict, movie_charidToName_dict, movie_charNameToid_dict = read_cornell_data()
+    print('read cornell data')
+    movie_conversation_count = 0
+    # print(movie_conversations_dict)
+    #print(movie_conversation_count)
+    # print(movie_conversation_count)
+    # print(len(movie_lines_dict.keys()))
+    # print(len(movie_charidToName_dict.keys()))
+    # print(movie_charNameToid_dict)
+    #movie_stage_direction = get_stage_direction()
+    # print('got stage direction data')
+    data_json = {}
     cont = Contractions('GoogleNews-vectors-negative300.bin')  # change words like I'd -> I would
     print("before loading models")
     cont.load_models()
     print('done loading motherfucker')
-    movie_conversations_dict, movie_lines_dict, movie_charidToName_dict, movie_charNameToid_dict = read_cornell_data()
-    print('read cornell data')
-    movie_stage_direction = get_stage_direction()
-    data_json = {}
-    print('got stage direction')
     dialoges_char_verbs(cont,data_json,movie_conversations_dict, movie_lines_dict, movie_charidToName_dict, movie_charNameToid_dict)
-    stage_direction_char_verbs(cont,data_json,movie_stage_direction,movie_charNameToid_dict)
-
-    with open('character_verb.json', 'w') as outfile:
+    with open('character_verb.json_dialogues', 'w') as outfile:
        json.dump(data_json, outfile)
+
+    '''print('extracted from dialoges')
+    stage_direction_char_verbs(cont,data_json,movie_stage_direction,movie_charNameToid_dict)
+    print('extracted from stage_direction')'''
