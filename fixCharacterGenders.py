@@ -3,13 +3,13 @@ def tolower(s):
 
 if __name__ == "__main__":
     
-    with open('data/name-gender/female.txt') as f:
+    with open('data/cmu_ng/female.txt') as f:
         fnames = list(map(tolower, f.read().split('\n')))
     
-    with open('data/name-gender/male.txt') as f:
+    with open('data/cmu_ng/male.txt') as f:
         mnames = list(map(tolower, f.read().split('\n')))
 
-    with open('data/cornell movie-dialogs corpus/movie_characters_metadata.txt', 
+    with open('data/cdmn_mds/movie_characters_metadata.txt', 
         encoding='ISO-8859-1') as f:
         cdb = f.read().split('\n')
     
@@ -33,7 +33,7 @@ if __name__ == "__main__":
 
     s = '\n'.join(cdb_clean)
 
-    with open('data/cornell movie-dialogs corpus/movie_characters_metadata.txt', 'w') as f:
+    with open('data/cdmn_mds/movie_characters_metadata.txt', 'w') as f:
         f.write(s)
 
     print("{} genders fixed from name-gender list".format(count))
