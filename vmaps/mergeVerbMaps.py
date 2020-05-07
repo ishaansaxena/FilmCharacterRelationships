@@ -1,9 +1,9 @@
 import json
 
-with open('vmaps/cvd.json') as f:
+with open('cvd.json') as f:
     d = json.load(f)
 
-with open('vmaps/cvsd.json') as f:
+with open('cvsd.json') as f:
     e = json.load(f)
 
 for k, v in e.items():
@@ -12,5 +12,5 @@ for k, v in e.items():
     else:
         d[k] = v
     
-with open('vmaps/cv.json', 'w') as f:
+with open('cv.json', 'w') as f:
     json.dump(d, f)
