@@ -25,7 +25,7 @@ def power_map(x):
 def lemmatize(x):
     return WordNetLemmatizer().lemmatize(x, 'v')
 
-def pa_dataframe_from_verbs(verb_dict, verbose=False):
+def pa_df_from_verbs(verb_dict, verbose=False):
     verb_set = pd.read_csv('data/ms_cfap/agency_power.csv')
 
     verb_set['verb_base']  = verb_set['verb'].apply(lemmatize)
@@ -67,7 +67,7 @@ def pa_dataframe_from_verbs(verb_dict, verbose=False):
     df['pv'] = df['power']/df['verb_count']
     return df
 
-def unigram_dataset_from_conversations(cdb, lmap, wmap, s_min=5, verbose=False):
+def ug_df_from_convs(cdb, lmap, wmap, s_min=5, verbose=False):
     cmap = {'Book':[], 'Char 1':[], 'Char 2':[], 'Span ID':[], 'Words': []}
     span = {}
 
@@ -118,3 +118,30 @@ def unigram_dataset_from_conversations(cdb, lmap, wmap, s_min=5, verbose=False):
         prev_key = key
 
     return pd.DataFrame.from_dict(cmap), span
+
+def get_pa_maps(pa_file='vmaps/pa_from_vmaps.csv'):
+    with open(pa_file) as f:
+        f.readline()
+        pal = list(map(lambda x: x.split(','), f.read().split('\n')))
+        pmap = dict((x[0], float(x[-1])) for x in pal[0:-1])
+        amap = dict((x[0], float(x[-2])) for x in pal[0:-1])
+    return pmap, amap
+
+def sl_df_from_traj(trajectories, pmap, amap):
+    df = pd.read_csv(trajectories)
+    del df['Span ID']
+
+    df = df.groupby(['Book', 'Char 1', 'Char 2']).mean().reset_index()
+
+    desc_probs  = df.values[:, 4:]
+    _, num_desc = desc_probs.shape
+    norm_probs  = desc_probs/np.sum(desc_probs, axis=1)[:, None]
+
+    df.loc[:, ['Topic {}'.format(x) for x in range(num_desc)]] = norm_probs
+
+    df['p1'] = df['Char 1'].map(pmap)
+    df['p2'] = df['Char 2'].map(pmap)
+    df['a1'] = df['Char 1'].map(amap)
+    df['a2'] = df['Char 2'].map(amap)
+
+    return df
