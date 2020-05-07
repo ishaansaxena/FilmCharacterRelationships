@@ -1,0 +1,164 @@
+loading data...
+300 466 5 18970 9035 618 10291
+compiling...
+/Users/ishaansaxena/Library/Python/2.7/lib/python/site-packages/lasagne/nonlinearities.py:44: UserWarning: DEPRECATION: If x is a vector, Softmax will not automatically pad x anymore in next releases. If you need it, please do it manually. The vector case is gonna be supported soon and the output will be a vector.
+  return theano.tensor.nnet.softmax(x)
+WARNING (theano.gof.compilelock): Overriding existing lock by dead process '6500' (I am process '6591')
+done compiling, now training...
+descriptor 0:
+[u'woah', u'ohmigod', u'wunderbar', u'ohh', u'ohmygod', u'dorky', u'yawp', u'poolroom', u'sentimentalist', u'nooo']
+descriptor 1:
+[u'herbert', u'telephoned', u'edward', u'frederick', u'appointed', u'sir', u'william', u'superintendent', u'nephew', u'admiral']
+descriptor 2:
+[u'refill', u'refuel', u'shove', u'crackin', u'feds', u'scramble', u'straighten', u'yank', u'impound', u'jacked']
+descriptor 3:
+[u'several', u'three', u'four', u'nearly', u'addition', u'two', u'six', u'eight', u'large', u'five']
+descriptor 4:
+[u'think', u'know', u'really', u'something', u'anything', u'thing', u'things', u'want', u'certainly', u'else']
+writing trajectories...
+done with epoch:  0  cost = 346.9091046927562 time:  598.486876965
+descriptor 0:
+[u'woah', u'ohmigod', u'wunderbar', u'ohh', u'ohmygod', u'dorky', u'groovy', u'loudmouth', u'voluptuous', u'motherfucker']
+descriptor 1:
+[u'telephoned', u'appointed', u'advisor', u'herbert', u'superintendent', u'frederick', u'magistrate', u'counsel', u'mrs', u'layton']
+descriptor 2:
+[u'refill', u'refuel', u'crackin', u'feds', u'scramble', u'shove', u'jacked', u'straighten', u'ramp', u'impound']
+descriptor 3:
+[u'several', u'three', u'four', u'six', u'eight', u'two', u'five', u'nearly', u'addition', u'large']
+descriptor 4:
+[u'know', u'think', u'really', u'something', u'anything', u'thing', u'want', u'certainly', u'things', u'else']
+writing trajectories...
+done with epoch:  1  cost = 337.7903905419028 time:  564.659383059
+descriptor 0:
+[u'woah', u'ohmigod', u'wunderbar', u'ohh', u'ohmygod', u'dorky', u'loudmouth', u'motherfucker', u'adorable', u'groovy']
+descriptor 1:
+[u'telephoned', u'advisor', u'sollozzo', u'appointed', u'rodger', u'counsel', u'admiral', u'dardis', u'magistrate', u'herbert']
+descriptor 2:
+[u'refuel', u'refill', u'feds', u'crackin', u'shove', u'scramble', u'straighten', u'jacked', u'unload', u'wanta']
+descriptor 3:
+[u'several', u'three', u'four', u'eight', u'six', u'two', u'five', u'nearly', u'addition', u'large']
+descriptor 4:
+[u'think', u'know', u'really', u'something', u'anything', u'certainly', u'thing', u'things', u'want', u'else']
+writing trajectories...
+done with epoch:  2  cost = 335.94735999557753 time:  568.281251907
+descriptor 0:
+[u'woah', u'ohmigod', u'wunderbar', u'ohh', u'redhead', u'loudmouth', u'adorable', u'groovy', u'sassy', u'ohmygod']
+descriptor 1:
+[u'telephoned', u'sollozzo', u'advisor', u'counsel', u'briefed', u'dardis', u'rodger', u'appointed', u'prof', u'kelson']
+descriptor 2:
+[u'refill', u'refuel', u'feds', u'crackin', u'scramble', u'straighten', u'shove', u'pushin', u'impound', u'wanta']
+descriptor 3:
+[u'several', u'three', u'four', u'eight', u'six', u'five', u'two', u'nearly', u'seven', u'nine']
+descriptor 4:
+[u'know', u'think', u'really', u'something', u'anything', u'things', u'thing', u'certainly', u'want', u'else']
+writing trajectories...
+done with epoch:  3  cost = 334.6538956045208 time:  573.191425085
+descriptor 0:
+[u'woah', u'wunderbar', u'ohmigod', u'ohh', u'redhead', u'adorable', u'loudmouth', u'spunky', u'groovy', u'sassy']
+descriptor 1:
+[u'sollozzo', u'telephoned', u'dardis', u'advisor', u'rodger', u'counsel', u'kelson', u'prof', u'magua', u'rosaline']
+descriptor 2:
+[u'refill', u'refuel', u'feds', u'crackin', u'scramble', u'straighten', u'impound', u'pushin', u'disengage', u'shove']
+descriptor 3:
+[u'three', u'several', u'four', u'eight', u'six', u'five', u'two', u'seven', u'nearly', u'nine']
+descriptor 4:
+[u'really', u'think', u'know', u'something', u'anything', u'things', u'thing', u'certainly', u'want', u'else']
+writing trajectories...
+done with epoch:  4  cost = 333.7969936617699 time:  591.389686108
+descriptor 0:
+[u'woah', u'redhead', u'wunderbar', u'adorable', u'ohmigod', u'loudmouth', u'sassy', u'spunky', u'ohh', u'groovy']
+descriptor 1:
+[u'sollozzo', u'counsel', u'dardis', u'telephoned', u'advisor', u'rodger', u'magua', u'kelson', u'rosaline', u'prof']
+descriptor 2:
+[u'refill', u'refuel', u'crackin', u'impound', u'feds', u'straighten', u'scramble', u'pushin', u'unzip', u'disengage']
+descriptor 3:
+[u'three', u'several', u'four', u'eight', u'six', u'five', u'two', u'seven', u'nearly', u'nine']
+descriptor 4:
+[u'think', u'really', u'know', u'something', u'anything', u'certainly', u'thing', u'things', u'want', u'else']
+writing trajectories...
+done with epoch:  5  cost = 333.36421796455363 time:  602.905548096
+descriptor 0:
+[u'woah', u'redhead', u'wunderbar', u'adorable', u'sassy', u'ohh', u'loudmouth', u'spunky', u'ohmigod', u'groovy']
+descriptor 1:
+[u'sollozzo', u'dardis', u'counsel', u'magua', u'rosaline', u'kelson', u'advisor', u'rodger', u'telephoned', u'prof']
+descriptor 2:
+[u'refill', u'refuel', u'crackin', u'pushin', u'disengage', u'feds', u'straighten', u'unzip', u'impound', u'whup']
+descriptor 3:
+[u'three', u'four', u'eight', u'six', u'several', u'five', u'two', u'seven', u'nearly', u'nine']
+descriptor 4:
+[u'think', u'really', u'know', u'something', u'anything', u'things', u'thing', u'certainly', u'want', u'else']
+writing trajectories...
+done with epoch:  6  cost = 332.4873093522694 time:  592.017619848
+descriptor 0:
+[u'redhead', u'woah', u'wunderbar', u'sassy', u'adorable', u'ohh', u'loudmouth', u'spunky', u'annabelle', u'ohmigod']
+descriptor 1:
+[u'sollozzo', u'dardis', u'counsel', u'magua', u'advisor', u'rosaline', u'rodger', u'kelson', u'prof', u'telephoned']
+descriptor 2:
+[u'refill', u'refuel', u'crackin', u'pushin', u'impound', u'unzip', u'straighten', u'whup', u'rearrange', u'vaporize']
+descriptor 3:
+[u'three', u'four', u'eight', u'six', u'five', u'several', u'two', u'seven', u'nine', u'nearly']
+descriptor 4:
+[u'think', u'really', u'know', u'something', u'anything', u'thing', u'things', u'certainly', u'want', u'else']
+writing trajectories...
+done with epoch:  7  cost = 332.1594713600651 time:  574.73319602
+descriptor 0:
+[u'redhead', u'woah', u'wunderbar', u'loudmouth', u'annabelle', u'adorable', u'sassy', u'ohmigod', u'ohh', u'spunky']
+descriptor 1:
+[u'sollozzo', u'dardis', u'magua', u'rosaline', u'counsel', u'advisor', u'prof', u'kelson', u'rodger', u'telephoned']
+descriptor 2:
+[u'refill', u'refuel', u'crackin', u'pushin', u'impound', u'unzip', u'vaporize', u'whup', u'disengage', u'straighten']
+descriptor 3:
+[u'three', u'four', u'eight', u'six', u'five', u'several', u'two', u'seven', u'nine', u'nearly']
+descriptor 4:
+[u'think', u'really', u'know', u'something', u'anything', u'thing', u'things', u'certainly', u'want', u'else']
+writing trajectories...
+done with epoch:  8  cost = 331.5660955962043 time:  585.530236006
+descriptor 0:
+[u'redhead', u'woah', u'wunderbar', u'annabelle', u'loudmouth', u'sassy', u'adorable', u'ohh', u'ohmigod', u'spunky']
+descriptor 1:
+[u'sollozzo', u'magua', u'dardis', u'rosaline', u'counsel', u'kelson', u'roston', u'rodger', u'arroway', u'beynon']
+descriptor 2:
+[u'refill', u'refuel', u'crackin', u'vaporize', u'unzip', u'pushin', u'impound', u'whup', u'disengage', u'rearrange']
+descriptor 3:
+[u'three', u'four', u'eight', u'six', u'five', u'several', u'two', u'seven', u'nine', u'nearly']
+descriptor 4:
+[u'really', u'think', u'know', u'something', u'anything', u'thing', u'certainly', u'things', u'want', u'else']
+writing trajectories...
+done with epoch:  9  cost = 331.1795816400631 time:  591.556653023
+done with epoch:  10  cost = 331.18066726397603 time:  598.682965994
+descriptor 0:
+[u'redhead', u'annabelle', u'woah', u'wunderbar', u'sassy', u'loudmouth', u'rosalie', u'adorable', u'spunky', u'ohh']
+descriptor 1:
+[u'sollozzo', u'rosaline', u'magua', u'dardis', u'counsel', u'roston', u'kelson', u'rielly', u'beynon', u'colet']
+descriptor 2:
+[u'refill', u'refuel', u'vaporize', u'crackin', u'unzip', u'pushin', u'impound', u'disengage', u'whup', u'straighten']
+descriptor 3:
+[u'three', u'four', u'eight', u'six', u'five', u'two', u'several', u'seven', u'nine', u'nearly']
+descriptor 4:
+[u'really', u'think', u'know', u'something', u'anything', u'thing', u'things', u'certainly', u'want', u'else']
+writing trajectories...
+done with epoch:  11  cost = 330.63541920092626 time:  594.677935123
+descriptor 0:
+[u'redhead', u'annabelle', u'wunderbar', u'woah', u'rosalie', u'sassy', u'loudmouth', u'adorable', u'spunky', u'ohh']
+descriptor 1:
+[u'sollozzo', u'magua', u'rosaline', u'dardis', u'counsel', u'roston', u'beynon', u'kelson', u'rielly', u'vesci']
+descriptor 2:
+[u'refill', u'refuel', u'vaporize', u'crackin', u'unzip', u'pushin', u'impound', u'whup', u'disengage', u'straighten']
+descriptor 3:
+[u'three', u'four', u'eight', u'six', u'five', u'two', u'several', u'seven', u'nine', u'nearly']
+descriptor 4:
+[u'really', u'think', u'know', u'something', u'anything', u'thing', u'things', u'certainly', u'else', u'want']
+writing trajectories...
+done with epoch:  12  cost = 330.4046701821587 time:  604.205234051
+descriptor 0:
+[u'redhead', u'annabelle', u'wunderbar', u'woah', u'loudmouth', u'rosalie', u'ohh', u'adorable', u'sassy', u'ohmigod']
+descriptor 1:
+[u'sollozzo', u'rosaline', u'magua', u'dardis', u'roston', u'rielly', u'counsel', u'fezzik', u'kelson', u'venkman']
+descriptor 2:
+[u'refill', u'vaporize', u'unzip', u'crackin', u'refuel', u'pushin', u'whup', u'impound', u'straighten', u'disengage']
+descriptor 3:
+[u'three', u'four', u'eight', u'six', u'five', u'two', u'several', u'seven', u'nine', u'nearly']
+descriptor 4:
+[u'really', u'think', u'know', u'something', u'anything', u'thing', u'things', u'certainly', u'want', u'else']
+writing trajectories...
+done with epoch:  13  cost = 330.25764885240756 time:  7577.51933289

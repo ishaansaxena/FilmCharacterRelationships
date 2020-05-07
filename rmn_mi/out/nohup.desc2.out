@@ -1,0 +1,53 @@
+loading data...
+300 470 2 25000 9035 618 10291
+compiling...
+/Users/ishaansaxena/Library/Python/2.7/lib/python/site-packages/lasagne/nonlinearities.py:44: UserWarning: DEPRECATION: If x is a vector, Softmax will not automatically pad x anymore in next releases. If you need it, please do it manually. The vector case is gonna be supported soon and the output will be a vector.
+  return theano.tensor.nnet.softmax(x)
+done compiling, now training...
+descriptor 0:
+[u'several', u'earlier', u'three', u'month', u'six', u'two', u'four', u'nearly', u'eight', u'last']
+descriptor 1:
+[u'goddammit', u'ohmigod', u'shhhhh', u'hmmm', u'ugh', u'ahhh', u'geez', u'yeah', u'argh', u'whoa']
+writing trajectories...
+done with epoch:  0  cost = 373.569166433623 time:  547.050403833
+descriptor 0:
+[u'even', u'could', u'although', u'though', u'many', u'however', u'several', u'already', u'least', u'last']
+descriptor 1:
+[u'ohmigod', u'goddammit', u'shhhhh', u'woah', u'ohh', u'argh', u'horsefeathers', u'oooooh', u'whooo', u'ahhh']
+writing trajectories...
+done with epoch:  1  cost = 365.29048628836955 time:  557.587163925
+descriptor 0:
+[u'even', u'could', u'although', u'many', u'though', u'least', u'however', u'several', u'already', u'one']
+descriptor 1:
+[u'shhhhh', u'ohmigod', u'goddammit', u'ohh', u'woah', u'argh', u'nooo', u'oooooh', u'ahhh', u'whooo']
+writing trajectories...
+done with epoch:  2  cost = 360.1549831236984 time:  562.825477839
+descriptor 0:
+[u'even', u'although', u'could', u'many', u'several', u'however', u'though', u'least', u'already', u'one']
+descriptor 1:
+[u'shhhhh', u'goddammit', u'ohmigod', u'ohh', u'woah', u'argh', u'nooo', u'oooooh', u'whooo', u'horsefeathers']
+writing trajectories...
+done with epoch:  3  cost = 358.3998151604753 time:  572.978347063
+descriptor 0:
+[u'even', u'several', u'although', u'many', u'however', u'could', u'though', u'least', u'last', u'one']
+descriptor 1:
+[u'shhhhh', u'ohmigod', u'goddammit', u'ohh', u'woah', u'argh', u'whooo', u'horsefeathers', u'nooo', u'ahhh']
+writing trajectories...
+done with epoch:  4  cost = 358.165826167763 time:  620.713792801
+descriptor 0:
+[u'even', u'several', u'although', u'could', u'many', u'least', u'however', u'already', u'last', u'one']
+descriptor 1:
+[u'shhhhh', u'ohmigod', u'goddammit', u'ohh', u'argh', u'woah', u'whooo', u'ahhh', u'nooo', u'horsefeathers']
+writing trajectories...
+done with epoch:  5  cost = 357.4551110851284 time:  624.288646936
+descriptor 0:
+[u'even', u'although', u'could', u'many', u'several', u'though', u'least', u'however', u'already', u'one']
+descriptor 1:
+[u'shhhhh', u'ohmigod', u'goddammit', u'ohh', u'woah', u'argh', u'whooo', u'nooo', u'oooooh', u'horsefeathers']
+writing trajectories...
+done with epoch:  6  cost = 357.23802671318595 time:  610.899548054
+loading data...
+300 470 5 25000 9035 618 10291
+compiling...
+/Users/ishaansaxena/Library/Python/2.7/lib/python/site-packages/lasagne/nonlinearities.py:44: UserWarning: DEPRECATION: If x is a vector, Softmax will not automatically pad x anymore in next releases. If you need it, please do it manually. The vector case is gonna be supported soon and the output will be a vector.
+  return theano.tensor.nnet.softmax(x)
