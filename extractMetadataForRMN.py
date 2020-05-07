@@ -8,6 +8,15 @@ from nltk.corpus import stopwords
 stopset = set(stopwords.words('english'))
 # tokenizer = RegexpTokenizer(r'\w+')
 tokenizer = RegexpTokenizer(r'[a-zA-Z]+')
+restricted = []
+
+with open('data/cmu_ng/female.txt') as f:
+    fnames = list(map(tolower, f.read().split('\n')))
+    restricted.extend(fnames)
+    
+with open('data/cmu_ng/male.txt') as f:
+    mnames = list(map(tolower, f.read().split('\n')))
+    restricted.extend(mnames)
 
 embeddings_dict = {}
 with open("data/glove/glove.6B.300d.txt", 'r') as f:
