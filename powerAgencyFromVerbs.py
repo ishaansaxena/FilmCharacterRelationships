@@ -50,6 +50,14 @@ def pa_dataframe_from_verbs(verb_dict, verbose=False):
                 continue
         if verbose:
             print(char_id, pa_map[char_id])
+    
+    with open('data/cdmn_mds/movie_characters_metadata.txt', encoding='ISO-8859-1') as f:
+        cdb  = list(map(lambda x: x.split(' +++$+++ '), f.read().split('\n')))
+        cl   = [cdb[i][0] for i in range(len(cdb))]
+    
+    for char_id in cl:
+        if char_id not in pa_map:
+            pa_map[char_id] = [0, 0, 0]
 
     df = pd.DataFrame.from_dict(pa_map, orient='index')
     df.columns = ['agency', 'power', 'verb_count']
@@ -59,4 +67,5 @@ def pa_dataframe_from_verbs(verb_dict, verbose=False):
     
 if __name__ == "__main__":
     df = pa_dataframe_from_verbs('vmaps/cv.json', verbose=True)
+    df = df.fillna(0)
     df.to_csv('vmaps/pa_from_vmaps.csv')
