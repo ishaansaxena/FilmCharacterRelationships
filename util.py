@@ -133,7 +133,7 @@ def sl_df_from_traj(trajectories, pmap, amap):
 
     df = df.groupby(['Book', 'Char 1', 'Char 2']).mean().reset_index()
 
-    desc_probs  = df.values[:, 4:]
+    desc_probs  = df.values[:, 3:]
     _, num_desc = desc_probs.shape
     norm_probs  = desc_probs/np.sum(desc_probs, axis=1)[:, None]
 
@@ -144,4 +144,4 @@ def sl_df_from_traj(trajectories, pmap, amap):
     df['a1'] = df['Char 1'].map(amap)
     df['a2'] = df['Char 2'].map(amap)
 
-    return df
+    return df, num_desc
