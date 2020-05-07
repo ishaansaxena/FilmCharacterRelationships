@@ -1,0 +1,636 @@
+loading data...
+300 466 20 18970 9035 618 10291
+compiling...
+/Users/ishaansaxena/Library/Python/2.7/lib/python/site-packages/lasagne/nonlinearities.py:44: UserWarning: DEPRECATION: If x is a vector, Softmax will not automatically pad x anymore in next releases. If you need it, please do it manually. The vector case is gonna be supported soon and the output will be a vector.
+  return theano.tensor.nnet.softmax(x)
+done compiling, now training...
+descriptor 0:
+[u'miller', u'anderson', u'kelly', u'gardner', u'walker', u'wilson', u'ryan', u'jason', u'kevin', u'harris']
+descriptor 1:
+[u'provide', u'government', u'required', u'additional', u'increase', u'require', u'allow', u'necessary', u'officials', u'needed']
+descriptor 2:
+[u'torso', u'legs', u'tail', u'underneath', u'flank', u'forehead', u'leaping', u'waist', u'horizontal', u'flapping']
+descriptor 3:
+[u'yeah', u'oh', u'replied', u'gosh', u'jeez', u'whoa', u'nope', u'geez', u'hmmm', u'yes']
+descriptor 4:
+[u'shampoo', u'bucket', u'powdered', u'candy', u'stuffed', u'cream', u'soda', u'tub', u'smelly', u'lemonade']
+descriptor 5:
+[u'understood', u'regard', u'motives', u'implication', u'assert', u'acknowledge', u'beliefs', u'interpret', u'contrary', u'imply']
+descriptor 6:
+[u'panicking', u'unwell', u'tiring', u'awhile', u'hungover', u'hectic', u'nightfall', u'griping', u'limping', u'wastin']
+descriptor 7:
+[u'eight', u'five', u'nine', u'fifteen', u'seven', u'six', u'eleven', u'four', u'twenty', u'fourteen']
+descriptor 8:
+[u'achieved', u'theoretical', u'experimental', u'excellent', u'component', u'composition', u'architecture', u'impressive', u'stellar', u'developed']
+descriptor 9:
+[u'want', u'go', u'let', u'gonna', u'get', u'somebody', u'anybody', u'tell', u'ca', u'afraid']
+descriptor 10:
+[u'scheduled', u'welcome', u'invited', u'offers', u'dinner', u'guests', u'tours', u'dining', u'visit', u'meet']
+descriptor 11:
+[u'iz', u'bro', u'ka', u'je', u'ja', u'ol', u'doin', u'luv', u'morg', u'lar']
+descriptor 12:
+[u'peculiar', u'grotesque', u'devoid', u'somewhat', u'oddly', u'strangely', u'unpleasant', u'subtle', u'wonderfully', u'comical']
+descriptor 13:
+[u'magua', u'nicked', u'offed', u'majorly', u'supposing', u'sidetracked', u'conned', u'misinformed', u'somethin', u'legit']
+descriptor 14:
+[u'faithfulness', u'implore', u'chaste', u'cherish', u'betrothed', u'longing', u'mathilda', u'annabelle', u'magua', u'enchanting']
+descriptor 15:
+[u'really', u'think', u'thing', u'pretty', u'definitely', u'maybe', u'things', u'guys', u'certainly', u'lot']
+descriptor 16:
+[u'life', u'mother', u'woman', u'lives', u'many', u'death', u'children', u'father', u'dying', u'living']
+descriptor 17:
+[u'sir', u'william', u'edward', u'mr', u'appointed', u'admiral', u'colonel', u'lieutenant', u'nephew', u'lord']
+descriptor 18:
+[u'shandor', u'precrime', u'clockworks', u'yesil', u'dardis', u'poolroom', u'treadstone', u'dilithium', u'thorkel', u'bembry']
+descriptor 19:
+[u'u', u'n', u'linear', u'function', u'configuration', u'coordinates', u'detect', u'coordinate', u'components', u'z']
+writing trajectories...
+('done with epoch: ', 0, ' cost =', 334.47503926360025, 'time: ', 911.9101860523224)
+descriptor 0:
+[u'kelly', u'anderson', u'gardner', u'miller', u'ryan', u'wilson', u'testified', u'girlfriend', u'harris', u'walker']
+descriptor 1:
+[u'increase', u'government', u'provide', u'cost', u'additional', u'increased', u'reduce', u'costs', u'boost', u'required']
+descriptor 2:
+[u'flank', u'torso', u'underneath', u'tail', u'legs', u'leaping', u'forehead', u'twisting', u'horizontal', u'sliding']
+descriptor 3:
+[u'yeah', u'oh', u'gosh', u'replied', u'jeez', u'nope', u'yes', u'geez', u'whoa', u'hmmm']
+descriptor 4:
+[u'shampoo', u'candy', u'powdered', u'cream', u'stuffed', u'bucket', u'bottle', u'soda', u'jelly', u'sandwiches']
+descriptor 5:
+[u'regard', u'understood', u'acknowledge', u'implication', u'motives', u'assert', u'interpret', u'beliefs', u'interpreted', u'condemn']
+descriptor 6:
+[u'unwell', u'panicking', u'nightfall', u'tiring', u'griping', u'calmed', u'awhile', u'hectic', u'hungover', u'asleep']
+descriptor 7:
+[u'eight', u'five', u'nine', u'seven', u'fifteen', u'six', u'four', u'eleven', u'twenty', u'fourteen']
+descriptor 8:
+[u'experimental', u'developed', u'component', u'composition', u'design', u'components', u'simulation', u'integrated', u'theoretical', u'systems']
+descriptor 9:
+[u'let', u'want', u'go', u'gonna', u'get', u'tell', u'somebody', u'anybody', u'ca', u'wanting']
+descriptor 10:
+[u'invited', u'dinner', u'scheduled', u'dining', u'guests', u'visit', u'tours', u'welcome', u'evening', u'breakfast']
+descriptor 11:
+[u'iz', u'yer', u'shit', u'bitch', u'bro', u'luv', u'rockin', u'ol', u'smokin', u'ka']
+descriptor 12:
+[u'grotesque', u'peculiar', u'amusing', u'comical', u'unpleasant', u'bizarre', u'irritating', u'oddly', u'somewhat', u'strangely']
+descriptor 13:
+[u'noooo', u'legit', u'supposing', u'previsions', u'itches', u'magua', u'payin', u'ooops', u'whooo', u'regrettably']
+descriptor 14:
+[u'faithfulness', u'annabelle', u'betrothed', u'mathilda', u'marries', u'chaste', u'magua', u'cherish', u'womanly', u'motherly']
+descriptor 15:
+[u'really', u'think', u'thing', u'definitely', u'things', u'certainly', u'guys', u'maybe', u'pretty', u'lot']
+descriptor 16:
+[u'life', u'mother', u'lives', u'woman', u'dead', u'living', u'many', u'children', u'lived', u'death']
+descriptor 17:
+[u'sir', u'william', u'mr', u'edward', u'appointed', u'colonel', u'lieutenant', u'admiral', u'nephew', u'henry']
+descriptor 18:
+[u'shandor', u'precrime', u'magua', u'wintermute', u'venkman', u'drossos', u'dardis', u'fanchon', u'thorkel', u'reman']
+descriptor 19:
+[u'u', u'n', u'linear', u'z', u'k', u'h', u'configuration', u'coordinates', u'function', u'velocity']
+writing trajectories...
+('done with epoch: ', 1, ' cost =', 320.4026864087005, 'time: ', 948.4657521247864)
+descriptor 0:
+[u'kelly', u'girlfriend', u'anderson', u'ryan', u'miller', u'testified', u'harris', u'wilson', u'gardner', u'walker']
+descriptor 1:
+[u'increase', u'government', u'increased', u'financing', u'boost', u'provide', u'funds', u'cost', u'increasing', u'funding']
+descriptor 2:
+[u'flank', u'torso', u'underneath', u'tail', u'beneath', u'legs', u'forehead', u'horizontal', u'leaping', u'vertical']
+descriptor 3:
+[u'yeah', u'oh', u'gosh', u'jeez', u'nope', u'geez', u'replied', u'whoa', u'yes', u'hmmm']
+descriptor 4:
+[u'shampoo', u'powdered', u'stuffed', u'cream', u'candy', u'bucket', u'sandwiches', u'bottle', u'bag', u'cakes']
+descriptor 5:
+[u'regard', u'acknowledge', u'implication', u'understood', u'motives', u'condemn', u'assert', u'contrary', u'interpreted', u'beliefs']
+descriptor 6:
+[u'unwell', u'panicking', u'nightfall', u'woke', u'asleep', u'calmed', u'tiring', u'waking', u'griping', u'awhile']
+descriptor 7:
+[u'eight', u'five', u'nine', u'fifteen', u'six', u'seven', u'four', u'eleven', u'twenty', u'ten']
+descriptor 8:
+[u'experimental', u'components', u'developed', u'composition', u'component', u'simulation', u'parameters', u'method', u'technique', u'visual']
+descriptor 9:
+[u'let', u'go', u'want', u'get', u'gonna', u'tell', u'ca', u'somebody', u'going', u'anybody']
+descriptor 10:
+[u'scheduled', u'invited', u'evening', u'dinner', u'visit', u'guests', u'tours', u'next', u'welcome', u'meeting']
+descriptor 11:
+[u'shit', u'bitch', u'iz', u'yer', u'rockin', u'whore', u'hallelujah', u'thug', u'fucking', u'luv']
+descriptor 12:
+[u'grotesque', u'comical', u'amusing', u'bizarre', u'peculiar', u'somewhat', u'surreal', u'frightening', u'strangely', u'oddly']
+descriptor 13:
+[u'previsions', u'noooo', u'itches', u'souse', u'nutcase', u'magua', u'raspail', u'payin', u'whooo', u'polymerized']
+descriptor 14:
+[u'faithfulness', u'annabelle', u'mathilda', u'betrothed', u'marries', u'nursemaid', u'chaste', u'womanly', u'cherish', u'longing']
+descriptor 15:
+[u'really', u'think', u'thing', u'certainly', u'guys', u'definitely', u'things', u'lot', u'pretty', u'obviously']
+descriptor 16:
+[u'mother', u'life', u'lives', u'many', u'lived', u'died', u'children', u'living', u'dead', u'death']
+descriptor 17:
+[u'sir', u'mr', u'william', u'edward', u'appointed', u'colonel', u'admiral', u'lieutenant', u'nephew', u'dr']
+descriptor 18:
+[u'shandor', u'wintermute', u'precrime', u'drossos', u'dardis', u'venkman', u'fanchon', u'cheswick', u'magua', u'bodell']
+descriptor 19:
+[u'u', u'n', u'z', u'h', u'k', u'linear', u'coordinates', u'function', u'p', u'l']
+writing trajectories...
+('done with epoch: ', 2, ' cost =', 316.63023638451193, 'time: ', 726.9032471179962)
+descriptor 0:
+[u'kelly', u'girlfriend', u'testified', u'anderson', u'ryan', u'harris', u'boyfriend', u'wilson', u'miller', u'gardner']
+descriptor 1:
+[u'increase', u'government', u'boost', u'increased', u'financing', u'funds', u'financial', u'provide', u'increasing', u'funding']
+descriptor 2:
+[u'flank', u'underneath', u'torso', u'tail', u'beneath', u'rolled', u'vertical', u'horizontal', u'bow', u'legs']
+descriptor 3:
+[u'yeah', u'oh', u'gosh', u'yes', u'jeez', u'whoa', u'nope', u'geez', u'replied', u'hmmm']
+descriptor 4:
+[u'powdered', u'stuffed', u'cream', u'shampoo', u'sandwiches', u'candy', u'cakes', u'bucket', u'yogurt', u'bottle']
+descriptor 5:
+[u'acknowledge', u'regard', u'condemn', u'understood', u'implication', u'assert', u'motives', u'statements', u'openly', u'contrary']
+descriptor 6:
+[u'unwell', u'woke', u'panicking', u'nightfall', u'asleep', u'calmed', u'waking', u'tiring', u'foggy', u'hectic']
+descriptor 7:
+[u'eight', u'five', u'nine', u'six', u'seven', u'fifteen', u'four', u'twenty', u'eleven', u'ten']
+descriptor 8:
+[u'experimental', u'components', u'developed', u'component', u'parameters', u'simulation', u'systems', u'visual', u'method', u'technique']
+descriptor 9:
+[u'let', u'want', u'go', u'get', u'gonna', u'tell', u'ca', u'going', u'somebody', u'wo']
+descriptor 10:
+[u'scheduled', u'invited', u'evening', u'next', u'visit', u'meeting', u'dinner', u'guests', u'tours', u'dining']
+descriptor 11:
+[u'shit', u'bitch', u'whore', u'fucking', u'rockin', u'yer', u'hallelujah', u'iz', u'thug', u'smokin']
+descriptor 12:
+[u'grotesque', u'comical', u'amusing', u'frightening', u'bizarre', u'peculiar', u'strangely', u'somewhat', u'seductive', u'surreal']
+descriptor 13:
+[u'itches', u'noooo', u'raspail', u'previsions', u'souse', u'payin', u'magua', u'whooo', u'kiddo', u'losin']
+descriptor 14:
+[u'faithfulness', u'annabelle', u'marries', u'mathilda', u'betrothed', u'nursemaid', u'heartfelt', u'emmi', u'magua', u'cherish']
+descriptor 15:
+[u'really', u'think', u'certainly', u'thing', u'definitely', u'lot', u'guys', u'things', u'obviously', u'pretty']
+descriptor 16:
+[u'mother', u'lives', u'life', u'children', u'lived', u'many', u'died', u'living', u'people', u'years']
+descriptor 17:
+[u'sir', u'mr', u'william', u'appointed', u'edward', u'colonel', u'lieutenant', u'henry', u'admiral', u'nephew']
+descriptor 18:
+[u'shandor', u'wintermute', u'drossos', u'magua', u'precrime', u'dardis', u'hemmingway', u'fanchon', u'bodell', u'venkman']
+descriptor 19:
+[u'u', u'n', u'z', u'h', u'k', u'linear', u'p', u'coordinates', u'l', u'ne']
+writing trajectories...
+('done with epoch: ', 3, ' cost =', 314.381647641246, 'time: ', 720.9123129844666)
+descriptor 0:
+[u'kelly', u'girlfriend', u'boyfriend', u'testified', u'ryan', u'anderson', u'miller', u'wilson', u'harris', u'gardner']
+descriptor 1:
+[u'increase', u'government', u'increased', u'boost', u'increasing', u'financing', u'provide', u'funds', u'financial', u'funding']
+descriptor 2:
+[u'flank', u'underneath', u'beneath', u'tail', u'torso', u'onto', u'rolled', u'horizontal', u'vertical', u'bow']
+descriptor 3:
+[u'yeah', u'oh', u'gosh', u'nope', u'yes', u'whoa', u'geez', u'jeez', u'hey', u'hmmm']
+descriptor 4:
+[u'cream', u'stuffed', u'powdered', u'shampoo', u'bucket', u'sandwiches', u'candy', u'bottle', u'soda', u'bag']
+descriptor 5:
+[u'acknowledge', u'condemn', u'understood', u'regard', u'implication', u'statements', u'criticize', u'motives', u'contrary', u'publicly']
+descriptor 6:
+[u'unwell', u'woke', u'nightfall', u'panicking', u'asleep', u'calmed', u'waking', u'tiring', u'hectic', u'griping']
+descriptor 7:
+[u'eight', u'five', u'nine', u'six', u'seven', u'fifteen', u'four', u'twenty', u'eleven', u'ten']
+descriptor 8:
+[u'experimental', u'components', u'parameters', u'developed', u'component', u'visual', u'method', u'simulation', u'composition', u'technique']
+descriptor 9:
+[u'let', u'want', u'go', u'get', u'gonna', u'ca', u'tell', u'wo', u'going', u'try']
+descriptor 10:
+[u'scheduled', u'evening', u'next', u'invited', u'visit', u'meeting', u'tours', u'dinner', u'guests', u'conference']
+descriptor 11:
+[u'shit', u'bitch', u'fucking', u'whore', u'rockin', u'yer', u'hallelujah', u'thug', u'hoodlum', u'iz']
+descriptor 12:
+[u'grotesque', u'comical', u'amusing', u'frightening', u'bizarre', u'peculiar', u'strangely', u'seductive', u'disturbing', u'oddly']
+descriptor 13:
+[u'noooo', u'itches', u'payin', u'previsions', u'raspail', u'kiddo', u'laughin', u'whooo', u'stickin', u'souse']
+descriptor 14:
+[u'faithfulness', u'annabelle', u'marries', u'betrothed', u'mathilda', u'heartfelt', u'gratitude', u'nursemaid', u'emmi', u'longing']
+descriptor 15:
+[u'really', u'think', u'certainly', u'thing', u'definitely', u'things', u'lot', u'guys', u'pretty', u'obviously']
+descriptor 16:
+[u'mother', u'lives', u'lived', u'life', u'children', u'many', u'died', u'living', u'dead', u'people']
+descriptor 17:
+[u'sir', u'william', u'mr', u'appointed', u'edward', u'colonel', u'lieutenant', u'admiral', u'nephew', u'henry']
+descriptor 18:
+[u'shandor', u'wintermute', u'drossos', u'fanchon', u'magua', u'dardis', u'seeya', u'hemmingway', u'bodell', u'precrime']
+descriptor 19:
+[u'u', u'n', u'z', u'h', u'k', u'ne', u'l', u'p', u'j', u'linear']
+writing trajectories...
+('done with epoch: ', 4, ' cost =', 312.7093556937484, 'time: ', 741.2833588123322)
+descriptor 0:
+[u'kelly', u'girlfriend', u'boyfriend', u'testified', u'harris', u'ryan', u'anderson', u'wilson', u'miller', u'gardner']
+descriptor 1:
+[u'increase', u'government', u'boost', u'increased', u'financing', u'provide', u'increasing', u'funds', u'financial', u'reduce']
+descriptor 2:
+[u'flank', u'underneath', u'beneath', u'onto', u'tail', u'rolled', u'torso', u'foot', u'rear', u'sliding']
+descriptor 3:
+[u'yeah', u'oh', u'gosh', u'geez', u'whoa', u'nope', u'yes', u'jeez', u'hmmm', u'hmm']
+descriptor 4:
+[u'stuffed', u'bucket', u'cream', u'shampoo', u'powdered', u'sandwiches', u'bottle', u'cans', u'candy', u'buckets']
+descriptor 5:
+[u'acknowledge', u'condemn', u'understood', u'regard', u'implication', u'criticize', u'statements', u'publicly', u'contrary', u'motives']
+descriptor 6:
+[u'woke', u'unwell', u'nightfall', u'panicking', u'asleep', u'calmed', u'waking', u'tiring', u'hectic', u'afternoon']
+descriptor 7:
+[u'eight', u'five', u'nine', u'six', u'seven', u'fifteen', u'four', u'twenty', u'eleven', u'three']
+descriptor 8:
+[u'experimental', u'components', u'parameters', u'component', u'visual', u'developed', u'method', u'simulation', u'systems', u'interface']
+descriptor 9:
+[u'let', u'go', u'want', u'get', u'gonna', u'wo', u'ca', u'tell', u'going', u'somebody']
+descriptor 10:
+[u'scheduled', u'next', u'evening', u'invited', u'visit', u'meeting', u'tours', u'dinner', u'weekend', u'expected']
+descriptor 11:
+[u'shit', u'bitch', u'fucking', u'whore', u'rockin', u'yer', u'thug', u'hoodlum', u'hallelujah', u'groovy']
+descriptor 12:
+[u'grotesque', u'comical', u'amusing', u'frightening', u'peculiar', u'seductive', u'strangely', u'bizarre', u'unattractive', u'somewhat']
+descriptor 13:
+[u'noooo', u'itches', u'payin', u'previsions', u'raspail', u'stickin', u'souse', u'whooo', u'kiddo', u'turnin']
+descriptor 14:
+[u'faithfulness', u'annabelle', u'marries', u'heartfelt', u'mathilda', u'betrothed', u'nursemaid', u'gratitude', u'emmi', u'longing']
+descriptor 15:
+[u'really', u'think', u'certainly', u'thing', u'definitely', u'things', u'obviously', u'lot', u'pretty', u'guys']
+descriptor 16:
+[u'mother', u'lives', u'lived', u'life', u'died', u'children', u'many', u'living', u'years', u'people']
+descriptor 17:
+[u'sir', u'mr', u'william', u'edward', u'appointed', u'colonel', u'lieutenant', u'admiral', u'nephew', u'henry']
+descriptor 18:
+[u'shandor', u'wintermute', u'fanchon', u'drossos', u'hemmingway', u'magua', u'dardis', u'seeya', u'bodell', u'precrime']
+descriptor 19:
+[u'u', u'n', u'h', u'z', u'k', u'ne', u'l', u'p', u'nu', u'j']
+writing trajectories...
+('done with epoch: ', 5, ' cost =', 311.6556127128672, 'time: ', 779.8526132106781)
+descriptor 0:
+[u'kelly', u'girlfriend', u'testified', u'ryan', u'harris', u'boyfriend', u'wilson', u'anderson', u'gardner', u'miller']
+descriptor 1:
+[u'increase', u'government', u'boost', u'increased', u'provide', u'financing', u'increasing', u'efforts', u'financial', u'funds']
+descriptor 2:
+[u'flank', u'beneath', u'underneath', u'onto', u'rolled', u'tail', u'foot', u'rear', u'mounted', u'torso']
+descriptor 3:
+[u'yeah', u'oh', u'gosh', u'yes', u'whoa', u'jeez', u'geez', u'hmmm', u'nope', u'hey']
+descriptor 4:
+[u'stuffed', u'bucket', u'cream', u'buckets', u'cans', u'sandwiches', u'powdered', u'shampoo', u'bag', u'soda']
+descriptor 5:
+[u'acknowledge', u'condemn', u'regard', u'understood', u'statements', u'criticize', u'motives', u'implication', u'publicly', u'contrary']
+descriptor 6:
+[u'woke', u'unwell', u'nightfall', u'panicking', u'asleep', u'waking', u'calmed', u'afternoon', u'hectic', u'lunchtime']
+descriptor 7:
+[u'eight', u'five', u'nine', u'six', u'seven', u'fifteen', u'four', u'twenty', u'eleven', u'ten']
+descriptor 8:
+[u'experimental', u'components', u'parameters', u'visual', u'component', u'method', u'developed', u'systems', u'interface', u'simulation']
+descriptor 9:
+[u'let', u'want', u'go', u'get', u'gonna', u'wo', u'ca', u'tell', u'going', u'try']
+descriptor 10:
+[u'scheduled', u'next', u'evening', u'visit', u'meeting', u'invited', u'weekend', u'conference', u'tours', u'expected']
+descriptor 11:
+[u'shit', u'bitch', u'fucking', u'whore', u'rockin', u'yer', u'thug', u'hallelujah', u'hoodlum', u'groovy']
+descriptor 12:
+[u'grotesque', u'comical', u'frightening', u'amusing', u'peculiar', u'unattractive', u'strangely', u'bizarre', u'seductive', u'somewhat']
+descriptor 13:
+[u'noooo', u'itches', u'payin', u'souse', u'raspail', u'previsions', u'stickin', u'magua', u'laughin', u'whooo']
+descriptor 14:
+[u'faithfulness', u'annabelle', u'marries', u'mathilda', u'heartfelt', u'betrothed', u'gratitude', u'nursemaid', u'longing', u'gracious']
+descriptor 15:
+[u'really', u'think', u'certainly', u'thing', u'definitely', u'things', u'obviously', u'lot', u'pretty', u'maybe']
+descriptor 16:
+[u'mother', u'lived', u'lives', u'life', u'died', u'children', u'many', u'years', u'living', u'people']
+descriptor 17:
+[u'sir', u'mr', u'william', u'edward', u'appointed', u'colonel', u'lieutenant', u'henry', u'admiral', u'nephew']
+descriptor 18:
+[u'shandor', u'wintermute', u'fanchon', u'drossos', u'dardis', u'magua', u'seeya', u'hemmingway', u'sollozzo', u'precrime']
+descriptor 19:
+[u'u', u'n', u'h', u'z', u'k', u'ne', u'l', u'nu', u'p', u'j']
+writing trajectories...
+('done with epoch: ', 6, ' cost =', 310.61493693350604, 'time: ', 708.2535610198975)
+descriptor 0:
+[u'girlfriend', u'kelly', u'boyfriend', u'testified', u'ryan', u'harris', u'anderson', u'wilson', u'gardner', u'miller']
+descriptor 1:
+[u'increase', u'government', u'boost', u'increased', u'financing', u'provide', u'increasing', u'efforts', u'financial', u'reduce']
+descriptor 2:
+[u'flank', u'beneath', u'onto', u'underneath', u'rolled', u'foot', u'tail', u'torso', u'mounted', u'rear']
+descriptor 3:
+[u'yeah', u'oh', u'gosh', u'yes', u'hey', u'whoa', u'geez', u'nope', u'hmmm', u'replied']
+descriptor 4:
+[u'stuffed', u'cream', u'bucket', u'cans', u'sandwiches', u'buckets', u'soda', u'powdered', u'candy', u'bag']
+descriptor 5:
+[u'condemn', u'acknowledge', u'regard', u'understood', u'criticize', u'statements', u'contrary', u'implication', u'publicly', u'motives']
+descriptor 6:
+[u'woke', u'nightfall', u'unwell', u'panicking', u'asleep', u'calmed', u'waking', u'afternoon', u'lunchtime', u'hectic']
+descriptor 7:
+[u'eight', u'five', u'nine', u'six', u'seven', u'four', u'fifteen', u'twenty', u'eleven', u'ten']
+descriptor 8:
+[u'experimental', u'components', u'visual', u'parameters', u'component', u'method', u'systems', u'interface', u'developed', u'uses']
+descriptor 9:
+[u'let', u'want', u'go', u'get', u'gonna', u'wo', u'ca', u'tell', u'going', u'try']
+descriptor 10:
+[u'scheduled', u'next', u'evening', u'invited', u'meeting', u'visit', u'tours', u'conference', u'weekend', u'expected']
+descriptor 11:
+[u'shit', u'bitch', u'fucking', u'whore', u'rockin', u'thug', u'yer', u'hallelujah', u'hoodlum', u'groovy']
+descriptor 12:
+[u'grotesque', u'comical', u'frightening', u'amusing', u'peculiar', u'seductive', u'strangely', u'unattractive', u'bizarre', u'somewhat']
+descriptor 13:
+[u'noooo', u'itches', u'payin', u'souse', u'stickin', u'turnin', u'polymerized', u'magua', u'laughin', u'previsions']
+descriptor 14:
+[u'marries', u'annabelle', u'faithfulness', u'heartfelt', u'mathilda', u'betrothed', u'gratitude', u'nursemaid', u'gracious', u'winifred']
+descriptor 15:
+[u'really', u'think', u'certainly', u'thing', u'definitely', u'things', u'lot', u'obviously', u'maybe', u'pretty']
+descriptor 16:
+[u'mother', u'lived', u'lives', u'died', u'life', u'children', u'many', u'years', u'living', u'people']
+descriptor 17:
+[u'sir', u'mr', u'william', u'edward', u'appointed', u'colonel', u'lieutenant', u'henry', u'nephew', u'admiral']
+descriptor 18:
+[u'shandor', u'wintermute', u'drossos', u'fanchon', u'seeya', u'dardis', u'magua', u'fezzik', u'sollozzo', u'hemmingway']
+descriptor 19:
+[u'u', u'n', u'z', u'h', u'k', u'ne', u'nu', u'l', u'j', u'p']
+writing trajectories...
+('done with epoch: ', 7, ' cost =', 309.845881298753, 'time: ', 757.1518909931183)
+descriptor 0:
+[u'kelly', u'girlfriend', u'boyfriend', u'testified', u'ryan', u'harris', u'wilson', u'gardner', u'anderson', u'miller']
+descriptor 1:
+[u'increase', u'government', u'boost', u'increased', u'financing', u'provide', u'increasing', u'efforts', u'financial', u'funds']
+descriptor 2:
+[u'flank', u'onto', u'beneath', u'underneath', u'rolled', u'foot', u'rear', u'tail', u'sliding', u'mounted']
+descriptor 3:
+[u'yeah', u'oh', u'gosh', u'yes', u'hey', u'whoa', u'geez', u'hmmm', u'jeez', u'nope']
+descriptor 4:
+[u'stuffed', u'bucket', u'cans', u'cream', u'buckets', u'soda', u'sandwiches', u'candy', u'powdered', u'bottle']
+descriptor 5:
+[u'acknowledge', u'condemn', u'regard', u'criticize', u'understood', u'statements', u'implication', u'contrary', u'motives', u'publicly']
+descriptor 6:
+[u'woke', u'nightfall', u'unwell', u'panicking', u'asleep', u'calmed', u'waking', u'afternoon', u'lunchtime', u'hectic']
+descriptor 7:
+[u'eight', u'five', u'nine', u'six', u'seven', u'four', u'fifteen', u'twenty', u'ten', u'eleven']
+descriptor 8:
+[u'components', u'experimental', u'parameters', u'visual', u'method', u'component', u'systems', u'developed', u'interface', u'uses']
+descriptor 9:
+[u'let', u'want', u'go', u'get', u'gonna', u'ca', u'wo', u'tell', u'try', u'going']
+descriptor 10:
+[u'scheduled', u'next', u'evening', u'meeting', u'visit', u'invited', u'tours', u'expected', u'conference', u'weekend']
+descriptor 11:
+[u'shit', u'bitch', u'fucking', u'whore', u'rockin', u'thug', u'yer', u'hallelujah', u'hoodlum', u'fuck']
+descriptor 12:
+[u'grotesque', u'comical', u'frightening', u'amusing', u'peculiar', u'seductive', u'strangely', u'somewhat', u'unattractive', u'disconcerting']
+descriptor 13:
+[u'noooo', u'itches', u'payin', u'polymerized', u'stickin', u'turnin', u'souse', u'laughin', u'losin', u'whooo']
+descriptor 14:
+[u'marries', u'annabelle', u'faithfulness', u'heartfelt', u'gratitude', u'betrothed', u'mathilda', u'affection', u'gracious', u'longing']
+descriptor 15:
+[u'really', u'think', u'certainly', u'thing', u'definitely', u'things', u'obviously', u'lot', u'pretty', u'maybe']
+descriptor 16:
+[u'mother', u'lived', u'died', u'lives', u'children', u'life', u'many', u'years', u'living', u'father']
+descriptor 17:
+[u'sir', u'william', u'mr', u'edward', u'appointed', u'colonel', u'lieutenant', u'henry', u'admiral', u'nephew']
+descriptor 18:
+[u'shandor', u'wintermute', u'fanchon', u'drossos', u'magua', u'seeya', u'dardis', u'hemmingway', u'sollozzo', u'fezzik']
+descriptor 19:
+[u'u', u'n', u'z', u'h', u'ne', u'k', u'l', u'nu', u'j', u'p']
+writing trajectories...
+('done with epoch: ', 8, ' cost =', 309.08615476767227, 'time: ', 757.3147640228271)
+descriptor 0:
+[u'kelly', u'girlfriend', u'testified', u'boyfriend', u'ryan', u'wilson', u'harris', u'anderson', u'gardner', u'miller']
+descriptor 1:
+[u'increase', u'government', u'boost', u'increased', u'financing', u'increasing', u'provide', u'efforts', u'financial', u'funds']
+descriptor 2:
+[u'onto', u'flank', u'beneath', u'underneath', u'foot', u'rolled', u'rear', u'mounted', u'sliding', u'tail']
+descriptor 3:
+[u'yeah', u'oh', u'gosh', u'hey', u'yes', u'whoa', u'geez', u'huh', u'jeez', u'nope']
+descriptor 4:
+[u'stuffed', u'bucket', u'cream', u'buckets', u'cans', u'sandwiches', u'soda', u'candy', u'bag', u'powdered']
+descriptor 5:
+[u'acknowledge', u'condemn', u'regard', u'understood', u'implication', u'statements', u'criticize', u'contrary', u'publicly', u'motives']
+descriptor 6:
+[u'woke', u'unwell', u'panicking', u'nightfall', u'asleep', u'calmed', u'waking', u'hectic', u'lunchtime', u'afternoon']
+descriptor 7:
+[u'eight', u'five', u'nine', u'six', u'seven', u'fifteen', u'four', u'twenty', u'ten', u'eleven']
+descriptor 8:
+[u'components', u'experimental', u'visual', u'parameters', u'method', u'component', u'systems', u'interface', u'developed', u'concepts']
+descriptor 9:
+[u'let', u'want', u'go', u'get', u'gonna', u'wo', u'ca', u'tell', u'try', u'going']
+descriptor 10:
+[u'scheduled', u'next', u'evening', u'meeting', u'visit', u'invited', u'weekend', u'conference', u'tours', u'expected']
+descriptor 11:
+[u'shit', u'bitch', u'fucking', u'whore', u'rockin', u'thug', u'hoodlum', u'yer', u'hallelujah', u'fuck']
+descriptor 12:
+[u'grotesque', u'comical', u'frightening', u'unattractive', u'peculiar', u'amusing', u'strangely', u'somewhat', u'seductive', u'disconcerting']
+descriptor 13:
+[u'noooo', u'itches', u'payin', u'turnin', u'stickin', u'polymerized', u'souse', u'losin', u'laughin', u'tessier']
+descriptor 14:
+[u'marries', u'annabelle', u'faithfulness', u'heartfelt', u'gratitude', u'betrothed', u'longing', u'gracious', u'affection', u'nursemaid']
+descriptor 15:
+[u'really', u'think', u'certainly', u'thing', u'definitely', u'things', u'obviously', u'lot', u'pretty', u'good']
+descriptor 16:
+[u'mother', u'lived', u'died', u'children', u'lives', u'life', u'living', u'many', u'father', u'years']
+descriptor 17:
+[u'sir', u'mr', u'william', u'edward', u'appointed', u'colonel', u'lieutenant', u'henry', u'dr', u'admiral']
+descriptor 18:
+[u'shandor', u'wintermute', u'fanchon', u'drossos', u'magua', u'dardis', u'seeya', u'fezzik', u'sollozzo', u'hemmingway']
+descriptor 19:
+[u'u', u'n', u'z', u'h', u'k', u'ne', u'l', u'j', u'p', u'nu']
+writing trajectories...
+('done with epoch: ', 9, ' cost =', 308.7494016052821, 'time: ', 770.4256389141083)
+descriptor 0:
+[u'girlfriend', u'kelly', u'boyfriend', u'testified', u'wilson', u'ryan', u'gardner', u'harris', u'anderson', u'miller']
+descriptor 1:
+[u'increase', u'boost', u'government', u'increased', u'increasing', u'financing', u'efforts', u'provide', u'officials', u'financial']
+descriptor 2:
+[u'flank', u'onto', u'beneath', u'underneath', u'foot', u'rolled', u'smashed', u'sliding', u'mounted', u'rear']
+descriptor 3:
+[u'yeah', u'oh', u'gosh', u'hey', u'yes', u'whoa', u'geez', u'huh', u'jeez', u'hmmm']
+descriptor 4:
+[u'stuffed', u'bucket', u'cans', u'buckets', u'cream', u'sandwiches', u'soda', u'candy', u'bag', u'powdered']
+descriptor 5:
+[u'condemn', u'acknowledge', u'regard', u'understood', u'criticize', u'contrary', u'implication', u'statements', u'motives', u'reject']
+descriptor 6:
+[u'woke', u'nightfall', u'panicking', u'unwell', u'asleep', u'waking', u'calmed', u'hectic', u'afternoon', u'lunchtime']
+descriptor 7:
+[u'eight', u'five', u'nine', u'six', u'seven', u'four', u'fifteen', u'twenty', u'three', u'ten']
+descriptor 8:
+[u'components', u'experimental', u'parameters', u'visual', u'method', u'component', u'interface', u'systems', u'concepts', u'function']
+descriptor 9:
+[u'let', u'want', u'go', u'get', u'gonna', u'wo', u'ca', u'tell', u'try', u'going']
+descriptor 10:
+[u'scheduled', u'next', u'evening', u'meeting', u'conference', u'visit', u'weekend', u'invited', u'tours', u'expected']
+descriptor 11:
+[u'shit', u'bitch', u'fucking', u'whore', u'rockin', u'thug', u'hoodlum', u'fuck', u'yer', u'groovy']
+descriptor 12:
+[u'grotesque', u'comical', u'frightening', u'peculiar', u'somewhat', u'amusing', u'unattractive', u'seductive', u'strangely', u'disconcerting']
+descriptor 13:
+[u'noooo', u'payin', u'itches', u'polymerized', u'stickin', u'turnin', u'laughin', u'souse', u'losin', u'tessier']
+descriptor 14:
+[u'marries', u'faithfulness', u'annabelle', u'heartfelt', u'gratitude', u'betrothed', u'longing', u'affection', u'gracious', u'winifred']
+descriptor 15:
+[u'really', u'think', u'certainly', u'thing', u'definitely', u'obviously', u'things', u'lot', u'pretty', u'good']
+descriptor 16:
+[u'mother', u'lived', u'lives', u'died', u'children', u'life', u'years', u'many', u'living', u'father']
+descriptor 17:
+[u'sir', u'william', u'mr', u'edward', u'colonel', u'appointed', u'lieutenant', u'henry', u'admiral', u'nephew']
+descriptor 18:
+[u'shandor', u'wintermute', u'drossos', u'fanchon', u'seeya', u'magua', u'dardis', u'fezzik', u'sollozzo', u'hemmingway']
+descriptor 19:
+[u'u', u'n', u'z', u'h', u'k', u'ne', u'l', u'p', u'nu', u'j']
+writing trajectories...
+('done with epoch: ', 10, ' cost =', 308.2198078411359, 'time: ', 768.6973071098328)
+descriptor 0:
+[u'kelly', u'girlfriend', u'testified', u'boyfriend', u'ryan', u'wilson', u'anderson', u'harris', u'miller', u'gardner']
+descriptor 1:
+[u'boost', u'increase', u'government', u'increased', u'financing', u'provide', u'efforts', u'increasing', u'officials', u'financial']
+descriptor 2:
+[u'onto', u'flank', u'beneath', u'underneath', u'rolled', u'foot', u'smashed', u'mounted', u'rear', u'sliding']
+descriptor 3:
+[u'yeah', u'oh', u'gosh', u'hey', u'yes', u'geez', u'whoa', u'huh', u'jeez', u'hmmm']
+descriptor 4:
+[u'stuffed', u'bucket', u'buckets', u'cans', u'sandwiches', u'cream', u'candy', u'soda', u'bag', u'powdered']
+descriptor 5:
+[u'condemn', u'acknowledge', u'understood', u'regard', u'criticize', u'implication', u'contrary', u'statements', u'motives', u'publicly']
+descriptor 6:
+[u'woke', u'nightfall', u'unwell', u'panicking', u'asleep', u'calmed', u'waking', u'afternoon', u'hectic', u'lunchtime']
+descriptor 7:
+[u'eight', u'five', u'nine', u'seven', u'six', u'fifteen', u'four', u'twenty', u'eleven', u'ten']
+descriptor 8:
+[u'components', u'experimental', u'parameters', u'visual', u'method', u'component', u'systems', u'function', u'interface', u'concepts']
+descriptor 9:
+[u'let', u'want', u'go', u'get', u'gonna', u'wo', u'ca', u'tell', u'try', u'able']
+descriptor 10:
+[u'scheduled', u'next', u'evening', u'meeting', u'visit', u'conference', u'invited', u'weekend', u'tours', u'expected']
+descriptor 11:
+[u'shit', u'bitch', u'fucking', u'whore', u'rockin', u'thug', u'fuck', u'hoodlum', u'groovy', u'yer']
+descriptor 12:
+[u'grotesque', u'comical', u'frightening', u'peculiar', u'somewhat', u'seductive', u'amusing', u'strangely', u'unattractive', u'disconcerting']
+descriptor 13:
+[u'noooo', u'itches', u'payin', u'stickin', u'turnin', u'laughin', u'losin', u'polymerized', u'souse', u'tessier']
+descriptor 14:
+[u'marries', u'faithfulness', u'annabelle', u'gratitude', u'heartfelt', u'betrothed', u'affection', u'longing', u'gracious', u'mathilda']
+descriptor 15:
+[u'really', u'think', u'certainly', u'thing', u'definitely', u'obviously', u'things', u'lot', u'pretty', u'good']
+descriptor 16:
+[u'mother', u'lived', u'lives', u'died', u'children', u'life', u'living', u'father', u'many', u'people']
+descriptor 17:
+[u'sir', u'mr', u'william', u'edward', u'appointed', u'colonel', u'lieutenant', u'henry', u'admiral', u'edmund']
+descriptor 18:
+[u'shandor', u'wintermute', u'drossos', u'fanchon', u'seeya', u'magua', u'dardis', u'fezzik', u'kastle', u'hemmingway']
+descriptor 19:
+[u'u', u'n', u'z', u'h', u'ne', u'k', u'nu', u'l', u'j', u'p']
+writing trajectories...
+('done with epoch: ', 11, ' cost =', 307.51107545805473, 'time: ', 750.0130078792572)
+descriptor 0:
+[u'girlfriend', u'kelly', u'testified', u'boyfriend', u'wilson', u'ryan', u'harris', u'anderson', u'miller', u'gardner']
+descriptor 1:
+[u'increase', u'boost', u'government', u'increased', u'increasing', u'financing', u'efforts', u'provide', u'financial', u'seeking']
+descriptor 2:
+[u'onto', u'flank', u'beneath', u'foot', u'rolled', u'underneath', u'smashed', u'rear', u'mounted', u'sliding']
+descriptor 3:
+[u'yeah', u'oh', u'gosh', u'hey', u'yes', u'whoa', u'geez', u'hmmm', u'huh', u'wow']
+descriptor 4:
+[u'stuffed', u'cans', u'buckets', u'bucket', u'cream', u'sandwiches', u'bag', u'powdered', u'candy', u'soda']
+descriptor 5:
+[u'condemn', u'acknowledge', u'criticize', u'understood', u'regard', u'contrary', u'implication', u'statements', u'motives', u'publicly']
+descriptor 6:
+[u'woke', u'nightfall', u'panicking', u'unwell', u'asleep', u'waking', u'calmed', u'afternoon', u'hectic', u'lunchtime']
+descriptor 7:
+[u'eight', u'five', u'nine', u'six', u'seven', u'fifteen', u'four', u'twenty', u'eleven', u'ten']
+descriptor 8:
+[u'components', u'experimental', u'parameters', u'visual', u'component', u'concepts', u'method', u'systems', u'function', u'interface']
+descriptor 9:
+[u'let', u'want', u'go', u'get', u'gonna', u'wo', u'ca', u'tell', u'try', u'able']
+descriptor 10:
+[u'scheduled', u'next', u'evening', u'meeting', u'conference', u'visit', u'weekend', u'invited', u'tours', u'expected']
+descriptor 11:
+[u'shit', u'bitch', u'fucking', u'whore', u'rockin', u'thug', u'fuck', u'hoodlum', u'groovy', u'yer']
+descriptor 12:
+[u'grotesque', u'frightening', u'comical', u'peculiar', u'seductive', u'somewhat', u'unattractive', u'strangely', u'disconcerting', u'amusing']
+descriptor 13:
+[u'noooo', u'turnin', u'itches', u'stickin', u'payin', u'losin', u'souse', u'laughin', u'polymerized', u'throwin']
+descriptor 14:
+[u'marries', u'faithfulness', u'annabelle', u'heartfelt', u'gratitude', u'betrothed', u'mathilda', u'longing', u'winifred', u'affection']
+descriptor 15:
+[u'really', u'think', u'certainly', u'thing', u'definitely', u'things', u'obviously', u'lot', u'pretty', u'good']
+descriptor 16:
+[u'mother', u'lived', u'died', u'lives', u'children', u'life', u'father', u'many', u'people', u'living']
+descriptor 17:
+[u'sir', u'mr', u'william', u'edward', u'appointed', u'colonel', u'lieutenant', u'henry', u'admiral', u'dr']
+descriptor 18:
+[u'shandor', u'wintermute', u'drossos', u'fanchon', u'seeya', u'dardis', u'magua', u'fezzik', u'kastle', u'sollozzo']
+descriptor 19:
+[u'u', u'n', u'z', u'h', u'ne', u'k', u'nu', u'l', u'j', u'p']
+writing trajectories...
+('done with epoch: ', 12, ' cost =', 307.37431625941787, 'time: ', 761.0144228935242)
+descriptor 0:
+[u'girlfriend', u'kelly', u'testified', u'boyfriend', u'wilson', u'ryan', u'harris', u'anderson', u'gardner', u'miller']
+descriptor 1:
+[u'boost', u'increase', u'government', u'increased', u'efforts', u'increasing', u'financing', u'provide', u'officials', u'financial']
+descriptor 2:
+[u'onto', u'flank', u'beneath', u'foot', u'rolled', u'underneath', u'smashed', u'mounted', u'rear', u'sliding']
+descriptor 3:
+[u'oh', u'yeah', u'gosh', u'hey', u'yes', u'huh', u'geez', u'whoa', u'wow', u'hmmm']
+descriptor 4:
+[u'stuffed', u'buckets', u'bucket', u'cans', u'cream', u'bag', u'sandwiches', u'candy', u'bottle', u'soda']
+descriptor 5:
+[u'condemn', u'acknowledge', u'criticize', u'understood', u'regard', u'contrary', u'implication', u'reject', u'statements', u'motives']
+descriptor 6:
+[u'woke', u'nightfall', u'panicking', u'unwell', u'asleep', u'waking', u'calmed', u'afternoon', u'lunchtime', u'hectic']
+descriptor 7:
+[u'eight', u'five', u'nine', u'six', u'seven', u'fifteen', u'four', u'twenty', u'ten', u'eleven']
+descriptor 8:
+[u'components', u'experimental', u'parameters', u'visual', u'component', u'function', u'systems', u'interface', u'method', u'concepts']
+descriptor 9:
+[u'let', u'want', u'go', u'get', u'gonna', u'wo', u'ca', u'able', u'try', u'tell']
+descriptor 10:
+[u'scheduled', u'next', u'evening', u'meeting', u'conference', u'visit', u'weekend', u'invited', u'tours', u'expected']
+descriptor 11:
+[u'shit', u'bitch', u'fucking', u'whore', u'thug', u'rockin', u'fuck', u'hoodlum', u'yer', u'groovy']
+descriptor 12:
+[u'grotesque', u'frightening', u'comical', u'somewhat', u'strangely', u'seductive', u'disconcerting', u'unattractive', u'peculiar', u'subtle']
+descriptor 13:
+[u'turnin', u'noooo', u'stickin', u'payin', u'itches', u'losin', u'laughin', u'souse', u'throwin', u'whooo']
+descriptor 14:
+[u'marries', u'faithfulness', u'annabelle', u'heartfelt', u'gratitude', u'betrothed', u'gracious', u'affection', u'longing', u'winifred']
+descriptor 15:
+[u'really', u'think', u'certainly', u'thing', u'things', u'lot', u'obviously', u'definitely', u'pretty', u'good']
+descriptor 16:
+[u'mother', u'lived', u'died', u'lives', u'children', u'life', u'father', u'living', u'people', u'dead']
+descriptor 17:
+[u'sir', u'mr', u'william', u'edward', u'appointed', u'colonel', u'lieutenant', u'admiral', u'edmund', u'henry']
+descriptor 18:
+[u'shandor', u'wintermute', u'drossos', u'fanchon', u'seeya', u'dardis', u'magua', u'fezzik', u'kastle', u'sollozzo']
+descriptor 19:
+[u'u', u'n', u'z', u'h', u'ne', u'k', u'nu', u'l', u'j', u'p']
+writing trajectories...
+('done with epoch: ', 13, ' cost =', 307.0497013806398, 'time: ', 697.2894520759583)
+descriptor 0:
+[u'girlfriend', u'kelly', u'boyfriend', u'testified', u'wilson', u'anderson', u'harris', u'ryan', u'gardner', u'miller']
+descriptor 1:
+[u'boost', u'increase', u'government', u'increased', u'efforts', u'increasing', u'financing', u'provide', u'officials', u'financial']
+descriptor 2:
+[u'onto', u'flank', u'beneath', u'foot', u'rolled', u'underneath', u'smashed', u'mounted', u'rear', u'sliding']
+descriptor 3:
+[u'oh', u'yeah', u'gosh', u'hey', u'yes', u'geez', u'whoa', u'huh', u'wow', u'hmmm']
+descriptor 4:
+[u'stuffed', u'buckets', u'bucket', u'cans', u'cream', u'sandwiches', u'candy', u'bag', u'soda', u'bottle']
+descriptor 5:
+[u'condemn', u'acknowledge', u'criticize', u'understood', u'regard', u'contrary', u'implication', u'statements', u'motives', u'publicly']
+descriptor 6:
+[u'woke', u'panicking', u'nightfall', u'asleep', u'unwell', u'waking', u'calmed', u'afternoon', u'lunchtime', u'hectic']
+descriptor 7:
+[u'eight', u'five', u'nine', u'six', u'seven', u'four', u'fifteen', u'twenty', u'three', u'ten']
+descriptor 8:
+[u'components', u'experimental', u'visual', u'parameters', u'component', u'method', u'concepts', u'interface', u'systems', u'function']
+descriptor 9:
+[u'let', u'want', u'go', u'get', u'wo', u'gonna', u'ca', u'tell', u'able', u'try']
+descriptor 10:
+[u'scheduled', u'next', u'evening', u'meeting', u'conference', u'weekend', u'visit', u'invited', u'expected', u'tours']
+descriptor 11:
+[u'shit', u'bitch', u'fucking', u'whore', u'thug', u'rockin', u'fuck', u'hoodlum', u'yer', u'ass']
+descriptor 12:
+[u'grotesque', u'frightening', u'comical', u'somewhat', u'seductive', u'strangely', u'peculiar', u'disconcerting', u'seem', u'amusing']
+descriptor 13:
+[u'noooo', u'turnin', u'losin', u'itches', u'stickin', u'laughin', u'payin', u'priss', u'souse', u'throwin']
+descriptor 14:
+[u'marries', u'faithfulness', u'annabelle', u'heartfelt', u'gratitude', u'gracious', u'betrothed', u'affection', u'longing', u'mathilda']
+descriptor 15:
+[u'really', u'think', u'certainly', u'thing', u'definitely', u'obviously', u'things', u'lot', u'pretty', u'good']
+descriptor 16:
+[u'mother', u'lived', u'died', u'lives', u'children', u'life', u'people', u'many', u'living', u'years']
+descriptor 17:
+[u'sir', u'william', u'mr', u'edward', u'colonel', u'appointed', u'lieutenant', u'henry', u'admiral', u'edmund']
+descriptor 18:
+[u'shandor', u'wintermute', u'drossos', u'fanchon', u'dardis', u'seeya', u'magua', u'fezzik', u'sollozzo', u'bembry']
+descriptor 19:
+[u'u', u'n', u'z', u'h', u'k', u'ne', u'nu', u'l', u'j', u'p']
+writing trajectories...
+('done with epoch: ', 14, ' cost =', 306.26219426715454, 'time: ', 651.4704189300537)
