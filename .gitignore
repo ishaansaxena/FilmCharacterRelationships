@@ -2,6 +2,7 @@
 .idea/
 *.DS_Store
 *.ipynb
+*.pyc
 data/
 scratch/
 GoogleNews-vectors-negative300.bin
