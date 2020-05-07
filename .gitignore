@@ -3,9 +3,12 @@
 *.DS_Store
 *.ipynb
 *.pyc
+__pycache__/
 data/
 scratch/
 GoogleNews-vectors-negative300.bin
 rmn/
-rmnc/
+rmnc/data/*
+rmnc/models/*
+rmnc/figs/*
 *.We
