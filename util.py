@@ -153,7 +153,6 @@ def read_in_character_metadata():
     char_gender_dict = {}
     for character_metadata in metadata_f:
         fields = character_metadata.split(" +++$+++ ")
-        print(fields)
         char_id = fields[0]
         char_gender = fields[4].lower()
         char_gender_dict[char_id] = char_gender
@@ -168,11 +167,11 @@ def get_r_w_f(num_desc,full_df):
         char_gender_1 = char_gender_dict[char_id_1]
         char_id_2 = row[3]
         char_gender_2 = char_gender_dict[char_id_2]
-        if(not((char_gender_1 == 'f') ^ (char_gender_2 == 'f'))): #delete non- f-m relationship or f-? relationships
+
+        if(char_gender_1 == '?' or char_gender_2 == '?'): #delete all relationships with a ?
             female_df.drop(female_df.index[row_index])
-            print("dropped a row")
-            print(char_gender_1)
-            print(char_gender_2)
+        elif(not((char_gender_1 == 'f') ^ (char_gender_2 == 'f'))): #delete non- f-m relationship
+            female_df.drop(female_df.index[row_index])
 
     return female_df
 
