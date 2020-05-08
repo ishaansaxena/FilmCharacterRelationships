@@ -147,7 +147,7 @@ def sl_df_from_traj(trajectories, pmap, amap):
 
     return df, num_desc
 
-def read_in_character_metadata():
+def get_char_gender():
     metadata_f = open("../data/cornell movie-dialogs corpus/movie_characters_metadata.txt", "r", encoding="utf8",
                             errors='ignore')
     char_gender_dict = {}
@@ -158,22 +158,14 @@ def read_in_character_metadata():
         char_gender_dict[char_id] = char_gender
     return char_gender_dict
 
-def get_r_w_f(num_desc,full_df):
-    char_gender_dict = read_in_character_metadata()
-    female_df = full_df.copy()
-    for row in full_df.itertuples():
-        row_index = row[0]
-        char_id_1 = row[2]
-        char_gender_1 = char_gender_dict[char_id_1]
-        char_id_2 = row[3]
-        char_gender_2 = char_gender_dict[char_id_2]
+def get_r_w_f_m(num_desc,full_df):
+    char_gender_map = get_char_gender()
+    full_df['g1'] = full_df['Char 1'].map(lambda x: char_gender_map[x])
+    full_df['g2'] = full_df['Char 2'].map(lambda x: char_gender_map[x])
 
-        if(char_gender_1 == '?' or char_gender_2 == '?'): #delete all relationships with a ?
-            female_df.drop(female_df.index[row_index])
-        elif(not((char_gender_1 == 'f') ^ (char_gender_2 == 'f'))): #delete non- f-m relationship
-            female_df.drop(female_df.index[row_index])
+    f_m_df = full_df[((full_df['g1'] == 'm') & (full_df['g2'] == 'f')) | ((full_df['g1'] == 'f') & (full_df['g2'] == 'm'))].copy()
 
-    return female_df
+    return f_m_df
 
 
 
