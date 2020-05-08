@@ -119,7 +119,7 @@ def ug_df_from_convs(cdb, lmap, wmap, s_min=5, verbose=False):
 
     return pd.DataFrame.from_dict(cmap), span
 
-def get_pa_maps(pa_file='vmaps/pa_from_vmaps.csv'):
+def get_pa_maps(pa_file='../vmaps/pa_from_vmaps.csv'):
     with open(pa_file) as f:
         f.readline()
         pal = list(map(lambda x: x.split(','), f.read().split('\n')))
@@ -128,6 +128,7 @@ def get_pa_maps(pa_file='vmaps/pa_from_vmaps.csv'):
     return pmap, amap
 
 def sl_df_from_traj(trajectories, pmap, amap):
+    #returns the average trajectories with the respective relationships
     df = pd.read_csv(trajectories)
     del df['Span ID']
 
@@ -145,3 +146,35 @@ def sl_df_from_traj(trajectories, pmap, amap):
     df['a2'] = df['Char 2'].map(amap)
 
     return df, num_desc
+
+def read_in_character_metadata():
+    metadata_f = open("../data/cornell movie-dialogs corpus/movie_characters_metadata.txt", "r", encoding="utf8",
+                            errors='ignore')
+    char_gender_dict = {}
+    for character_metadata in metadata_f:
+        fields = character_metadata.split(" +++$+++ ")
+        print(fields)
+        char_id = fields[0]
+        char_gender = fields[4].lower()
+        char_gender_dict[char_id] = char_gender
+    return char_gender_dict
+
+def get_r_w_f(num_desc,full_df):
+    char_gender_dict = read_in_character_metadata()
+    female_df = full_df.copy()
+    for row in full_df.itertuples():
+        row_index = row[0]
+        char_id_1 = row[2]
+        char_gender_1 = char_gender_dict[char_id_1]
+        char_id_2 = row[3]
+        char_gender_2 = char_gender_dict[char_id_2]
+        if(not((char_gender_1 == 'f') ^ (char_gender_2 == 'f'))): #delete non- f-m relationship or f-? relationships
+            female_df.drop(female_df.index[row_index])
+            print("dropped a row")
+            print(char_gender_1)
+            print(char_gender_2)
+
+    return female_df
+
+
+
