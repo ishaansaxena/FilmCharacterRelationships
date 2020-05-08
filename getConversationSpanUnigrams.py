@@ -14,7 +14,8 @@ if __name__ == "__main__":
     with open('data/cdmn_mds/movie_conversations.txt', encoding='ISO-8859-1') as f:
         cdb  = list(map(lambda x: x.split(' +++$+++ '), f.read().split('\n')))
 
-    df, span = ug_df_from_convs(cdb, lmap, wmap, verbose=True)
+    print('Processing conversations')
+    df, span = ug_df_from_convs(cdb, lmap, wmap)
     print('Saving unigram dataframe')
     print('{} spans added for {} conversation diads'.format(len(df), len(span)))
     df.to_csv('rmndata/relationships.csv', index=False)
