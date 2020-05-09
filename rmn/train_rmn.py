@@ -115,13 +115,13 @@ if __name__ == '__main__':
     d_hidden = 50
 
     # number of descriptors
-    num_descs = 25
+    num_descs = 20
 
     # number of negative samples per relationship
     num_negs = 50
 
     # word dropout probability
-    p_drop = 0.7
+    p_drop = 0.75
     
     n_epochs = 20
     lr = 0.001
