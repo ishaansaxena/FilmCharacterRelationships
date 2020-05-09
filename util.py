@@ -147,7 +147,7 @@ def sl_df_from_traj(trajectories, pmap, amap):
 
     return df, num_desc
 
-def get_char_gender(path="data/cornell movie-dialogs corpus/movie_characters_metadata.txt"):
+def get_char_gender(path="data/cdmn_mds/movie_characters_metadata.txt"):
     metadata_f = open(path, "r", encoding="utf8",errors='ignore')
     char_gender_dict = {}
     for character_metadata in metadata_f:
