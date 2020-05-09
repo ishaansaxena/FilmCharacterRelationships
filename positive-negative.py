@@ -76,15 +76,6 @@ def rels_pos_neg(get_f_m_df,num_desc):
 
     return np.array(p_a_pos_neg_d)
 
-def get_one_hot_encoding(label_data,num_desc):
-    label_data = label_data.astype(int)
-    label_data = np.array(label_data)
-    one_hot = np.zeros((label_data.size,label_data.max()+1))
-    one_hot[np.arange(label_data.size),label_data] = 1
-
-    return one_hot
-
-
 if __name__ == '__main__':
     get_f_m_df,num_desc = get_f_m_df()
     p_a_pos_neg_d = rels_pos_neg(get_f_m_df,num_desc)
@@ -108,19 +99,3 @@ if __name__ == '__main__':
     print(train_accuracy)
     print('test accuracy')
     print(test_accuracy)
-
-    most_likely_d = p_a_pos_neg_d[['most_likely_d']].to_numpy()
-    most_likely_d = get_one_hot_encoding(most_likely_d[:,0],num_desc)
-
-    pos_data = []
-    neg_data = []
-
-    for index in range(1000,p_a_data.shape[0]): #going through only test and checking
-        if(pos_neg[index] == 1):
-            pos_data.append(p_a_data[index].tolist())
-        else:
-            neg_data.append(p_a_data[index].tolist())
-    pos_data = np.array(pos_data)
-    neg_data = np.array(neg_data)
-    print(pos_data.shape)
-    print(neg_data.shape)
