@@ -28,15 +28,12 @@ Shell scripts:
 Python scripts:
 
 - `extractCharacterVerbs.py`: Extracts the verbs used by each character in the dataset 
-via dependancy parsing and coreference resolution using SpaCy. Download 'GoogleNews-vectors-negative300.bin' to run this script. 
-- `extractMetadataForRMN.py`: Extracted the metadata, span, movie and character embeddings, for the Relationship Modeling Network proposed in the paper "Feuding Families and Former Friends"" written by Mohit Iyyer et al. Download glove embeddings to run this script. 
+via dependancy parsing and coreference resolution using SpaCy. Download 'GoogleNews-vectors-negative300.bin' to run this script.
+- `extractMetadataForRMN.py`: Extracted the metadata, span, movie and character embeddings, for the Relationship Modeling Network proposed in the paper "Feuding Families and Former Friends"" written by Mohit Iyyer et al. [Download glove embeddings](http://nlp.stanford.edu/data/glove.42B.300d.zip) to run this script.
 - `fixCharacterGenders.py`: Some of the characters in the cornell dataset,data/cdmn_mds, don't have genders so 
 the script uses CMU name-gender corpus to obtain the genders for as many characters as possible. 
-
 - `getConversationsSpanUnigrams.py`: Creates a bag of words embedding for each span in a movie.   
-
 - `util.py`: Utility functions uses in another scripts. 
-
 - `positive-negative.py`: An attempt to predict whether a relationship is positive or negative. Uses a logistic regression model input as power and agency of a pair of characters. 
 
 
