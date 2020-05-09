@@ -2,13 +2,12 @@
 *.DS_Store
 *.pyc
 __pycache__/
-data/
+data/glove
 scratch/
 scratch.ipynb
 .ipynb_checkpoints/
-*.We
 rmn/data/*
 rmn/figs/*
-rmnc/data/*
-rmnc/figs/*
+rmn_w_pa/data/*
+rmnc_w_pa/figs/*
 /supervisedlearning_pa/
