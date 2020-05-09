@@ -121,7 +121,7 @@ if __name__ == '__main__':
     num_negs = 50
 
     # word dropout probability
-    p_drop = 0.75
+    p_drop = 0.72
     
     n_epochs = 20
     lr = 0.001
