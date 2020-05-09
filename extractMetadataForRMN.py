@@ -24,17 +24,21 @@ if __name__ == "__main__":
 
     print('Importing GloVe Embeddings')
     embeddings_dict = {}
-    with open("data/glove/glove.42B.300d.txt", 'r') as f:
-        for line in f:
-            try:
-                values = line.split()
-                word = values[0]
-                vector = np.asarray(values[1:], "float32")
-            except:
-                print(word)
-                continue
-            embeddings_dict[word] = vector
-   
+    try:
+        with open("data/glove/glove.42B.300d.txt", 'r') as f:
+            for line in f:
+                try:
+                    values = line.split()
+                    word = values[0]
+                    vector = np.asarray(values[1:], "float32")
+                except:
+                    print(word)
+                    continue
+                embeddings_dict[word] = vector
+    except Exception e:
+        print(e)
+        print('You must download Common Crawl GloVe embeddings into ./data/glove/glove.42B.300d.txt')
+    
     def w_condition(w):
         c = (w not in restricted_set) 
         c = c and (w in embeddings_dict)
