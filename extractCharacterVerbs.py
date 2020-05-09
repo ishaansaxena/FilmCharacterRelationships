@@ -6,12 +6,12 @@ from pycontractions import Contractions
 import os
 
 def read_cornell_data():
-    f = open("data/cornell movie-dialogs corpus/movie_conversations.txt", "r", encoding="utf8", errors='ignore')
+    f = open("data/cdmn_mds/movie_conversations.txt", "r", encoding="utf8", errors='ignore')
     movie_conversations = f.readlines()
     movie_conversations_dict = {}
-    movie_lines = open("data/cornell movie-dialogs corpus/movie_lines.txt", "r", encoding="utf8", errors='ignore')
+    movie_lines = open("data/cdmn_mds/movie_lines.txt", "r", encoding="utf8", errors='ignore')
     movie_lines_dict = {}
-    movie_characters = open("data/cornell movie-dialogs corpus/movie_characters_metadata.txt", "r", encoding="utf8",
+    movie_characters = open("data/cdmn_mds/movie_characters_metadata.txt", "r", encoding="utf8",
                             errors='ignore')
     movie_charidToName_dict = {}
     movie_charNameToid_dict = {}
@@ -50,9 +50,9 @@ def read_cornell_data():
 
 
 def get_stage_imsbd():
-    imsdb_directory = 'data/imsdb_scenes_dialogs_nov_2015/scenes'
+    imsdb_directory = 'data/imsdb_ssd/scenes'
     movie_stage_direction_dict = {}
-    movies_title_metadata = open("data/cornell movie-dialogs corpus/movie_titles_metadata.txt", "r", encoding="utf8",
+    movies_title_metadata = open("data/cdmn_mds/movie_titles_metadata.txt", "r", encoding="utf8",
                             errors='ignore')
     movie_title_name_to_id = {}
 
@@ -163,11 +163,11 @@ if __name__ == "__main__":
     cont.load_models()
     print('done loading  contrations models')
     dialoges_char_verbs(cont,data_json,movie_conversations_dict, movie_lines_dict, movie_charidToName_dict, movie_charNameToid_dict)
-    print('extracted verbs from dialogues written to cvd.json')
-    with open('cvd.json', 'w') as outfile:
+    print('extracted verbs from dialogues written to vmaps/cvd.json')
+    with open('vmaps/cvd.json', 'w') as outfile:
      json.dump(data_json, outfile)
 
     stage_direction_char_verbs(cont,data_json,movie_stage_direction,movie_charNameToid_dict)
-    print('extracted verbs from stage direction written to cvsd.json')
-    with open('cvsd.json', 'w') as outfile:
+    print('extracted verbs from stage direction written to vmaps/cvsd.json')
+    with open('vmaps/cvsd.json', 'w') as outfile:
         json.dump(data_json, outfile)
