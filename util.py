@@ -119,7 +119,7 @@ def ug_df_from_convs(cdb, lmap, wmap, s_min=5, verbose=False):
 
     return pd.DataFrame.from_dict(cmap), span
 
-def get_pa_maps(pa_file='../vmaps/pa_from_vmaps.csv'):
+def get_pa_maps(pa_file='vmaps/pa_from_vmaps.csv'):
     with open(pa_file) as f:
         f.readline()
         pal = list(map(lambda x: x.split(','), f.read().split('\n')))
@@ -148,7 +148,7 @@ def sl_df_from_traj(trajectories, pmap, amap):
     return df, num_desc
 
 def get_char_gender():
-    metadata_f = open("../data/cornell movie-dialogs corpus/movie_characters_metadata.txt", "r", encoding="utf8",
+    metadata_f = open("data/cornell movie-dialogs corpus/movie_characters_metadata.txt", "r", encoding="utf8",
                             errors='ignore')
     char_gender_dict = {}
     for character_metadata in metadata_f:
@@ -164,7 +164,6 @@ def get_r_w_f_m(num_desc,full_df):
     full_df['g2'] = full_df['Char 2'].map(lambda x: char_gender_map[x])
 
     f_m_df = full_df[((full_df['g1'] == 'm') & (full_df['g2'] == 'f')) | ((full_df['g1'] == 'f') & (full_df['g2'] == 'm'))].copy()
-
     return f_m_df
 
 
