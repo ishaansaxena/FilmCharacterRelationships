@@ -2,7 +2,6 @@
 *.DS_Store
 *.pyc
 __pycache__/
-data/
 scratch/
 scratch.ipynb
 .ipynb_checkpoints/
