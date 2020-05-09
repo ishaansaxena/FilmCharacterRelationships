@@ -1,7 +1,8 @@
 # FilmCharacterRelationship
   This repository contains the scripts and data for our project. 
   
-##data folders 
+##Data folders descriptions
+
 cmdn_mds: contains the cornell dataset. For more information about the dataset please take a look at 
 
 cdmn_mds/README.txt 
