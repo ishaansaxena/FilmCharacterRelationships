@@ -24,11 +24,15 @@ if __name__ == "__main__":
 
     print('Importing GloVe Embeddings')
     embeddings_dict = {}
-    with open("data/glove/glove.6B.300d.txt", 'r') as f:
+    with open("data/glove/glove.42B.300d.txt", 'r') as f:
         for line in f:
-            values = line.split()
-            word = values[0]
-            vector = np.asarray(values[1:], "float32")
+            try:
+                values = line.split()
+                word = values[0]
+                vector = np.asarray(values[1:], "float32")
+            except:
+                print(word)
+                continue
             embeddings_dict[word] = vector
    
     def w_condition(w):

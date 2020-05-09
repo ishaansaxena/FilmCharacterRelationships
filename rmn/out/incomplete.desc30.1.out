@@ -1,0 +1,192 @@
+loading data...
+300 415 30 17405 9035 618 5509
+compiling...
+/Users/ishaansaxena/Library/Python/2.7/lib/python/site-packages/lasagne/nonlinearities.py:44: UserWarning: DEPRECATION: If x is a vector, Softmax will not automatically pad x anymore in next releases. If you need it, please do it manually. The vector case is gonna be supported soon and the output will be a vector.
+  return theano.tensor.nnet.softmax(x)
+done compiling, now training...
+descriptor 0:
+[u'fucks', u'fucker', u'stepmother', u'fucken', u'nigger', u'stepfather', u'motherfucking', u'suckin', u'thug', u'bastard']
+descriptor 1:
+[u'tomorra', u'bodwin', u'sooze', u'crissake', u'teschmacher', u'whatsamatter', u'zerzura', u'thorpey', u'carjack', u'marcee']
+descriptor 2:
+[u'purchase', u'lunch', u'offers', u'shopping', u'dinner', u'holiday', u'discount', u'offer', u'shop', u'rental']
+descriptor 3:
+[u'gunmen', u'gunman', u'robbed', u'smuggle', u'robbers', u'gunpoint', u'robber', u'ambushed', u'stabbed', u'smuggled']
+descriptor 4:
+[u'flee', u'condemn', u'pray', u'kill', u'destroy', u'refusing', u'cease', u'threaten', u'confront', u'lest']
+descriptor 5:
+[u'bathe', u'downstairs', u'relax', u'tucked', u'beckoned', u'linger', u'refreshment', u'slumber', u'upstairs', u'comfy']
+descriptor 6:
+[u'knew', u'talked', u'wondered', u'convinced', u'told', u'husband', u'dad', u'daughter', u'know', u'thinks']
+descriptor 7:
+[u'mmmmmmm', u'ummmm', u'ahhhhhh', u'mmmmm', u'yesss', u'mmmmmm', u'uhhh', u'ummm', u'ohhhh', u'ohhh']
+descriptor 8:
+[u'uhh', u'sayin', u'alright', u'yup', u'nah', u'huh', u'geez', u'heh', u'yeah', u'yep']
+descriptor 9:
+[u'sir', u'righto', u'hallo', u'hiya', u'capt', u'madam', u'yesss', u'bedevere', u'launcelot', u'brigadier']
+descriptor 10:
+[u'supposin', u'caved', u'insinuating', u'whattya', u'fedorchuk', u'ludicrous', u'asinine', u'figgered', u'anyroad', u'unnerstand']
+descriptor 11:
+[u'excellent', u'enjoyable', u'nice', u'exceptionally', u'terrific', u'tasty', u'amazingly', u'refreshing', u'wonderfully', u'fantastic']
+descriptor 12:
+[u'ass', u'pussy', u'cock', u'butt', u'hairy', u'tits', u'chubby', u'booty', u'sexy', u'blonde']
+descriptor 13:
+[u'presume', u'doubted', u'supposing', u'prescribe', u'truthfully', u'persuaded', u'afford', u'prosecute', u'bribed', u'questioned']
+descriptor 14:
+[u'shoved', u'handcuffed', u'ankles', u'wrists', u'jerked', u'stabbed', u'dragged', u'slamming', u'rubbing', u'knees']
+descriptor 15:
+[u'commissioned', u'sword', u'squadron', u'commander', u'regiment', u'captured', u'cavalry', u'battalion', u'bronze', u'navy']
+descriptor 16:
+[u'metaphasic', u'trilithium', u'vaporize', u'thorpey', u'barboni', u'thuggees', u'infantery', u'bicarbonate', u'matuschka', u'droppen']
+descriptor 17:
+[u'anyroad', u'cinch', u'greenteeth', u'holster', u'whattya', u'cavello', u'pulleys', u'whatsamatter', u'treborn', u'schematics']
+descriptor 18:
+[u'liaison', u'dispatcher', u'supervisor', u'administrator', u'communications', u'switchboard', u'officer', u'assistant', u'auxiliary', u'telephone']
+descriptor 19:
+[u'walkway', u'promenade', u'courtyard', u'staircase', u'elegant', u'quaint', u'enchanting', u'peeked', u'stately', u'spacious']
+descriptor 20:
+[u'collapsed', u'resulted', u'remained', u'evacuated', u'recovered', u'kilometers', u'plunged', u'relocated', u'approximately', u'estimated']
+descriptor 21:
+[u'wanna', u'shit', u'fuckin', u'dumbass', u'gonna', u'know', u'bullshit', u'gotta', u'anybody', u'want']
+descriptor 22:
+[u'belief', u'existence', u'understanding', u'regard', u'inherent', u'aspects', u'thus', u'nature', u'therefore', u'extent']
+descriptor 23:
+[u'adjust', u'accelerate', u'manually', u'allow', u'stabilize', u'necessary', u'easier', u'adjusting', u'maintain', u'extend']
+descriptor 24:
+[u'around', u'far', u'going', u'time', u'run', u'less', u'start', u'across', u'running', u'big']
+descriptor 25:
+[u'payment', u'payments', u'dollars', u'cash', u'billing', u'payable', u'invoice', u'refund', u'taxpayer', u'loans']
+descriptor 26:
+[u'congratulate', u'congratulations', u'behalf', u'delegation', u'resignation', u'excellency', u'honored', u'treasurer', u'committee', u'counsel']
+descriptor 27:
+[u'ate', u'wondered', u'woke', u'noticed', u'enjoyed', u'heard', u'night', u'liked', u'thought', u'weird']
+descriptor 28:
+[u'terrifying', u'frightening', u'absurd', u'grotesque', u'delusional', u'perverse', u'fearful', u'laughable', u'hopeless', u'seeming']
+descriptor 29:
+[u'godmother', u'sultenfuss', u'teschmacher', u'dreamer', u'nightingale', u'boatwright', u'whorfin', u'francie', u'lullaby', u'dearest']
+writing trajectories...
+done with epoch:  0  cost = 557.9224494887251 time:  384.667988062
+descriptor 0:
+[u'fucks', u'fucker', u'stepmother', u'fucken', u'stepfather', u'lesbos', u'suckin', u'cannibal', u'fuckers', u'nigger']
+descriptor 1:
+[u'tomorra', u'didya', u'bodwin', u'headin', u'whatsamatter', u'teschmacher', u'hitchhike', u'carjack', u'jankis', u'rasczak']
+descriptor 2:
+[u'purchase', u'shopping', u'shop', u'gift', u'holiday', u'lunch', u'offers', u'dinner', u'store', u'rental']
+descriptor 3:
+[u'gunmen', u'robbers', u'smuggle', u'robber', u'smuggled', u'ambushed', u'gunman', u'nabbed', u'robbed', u'gunpoint']
+descriptor 4:
+[u'kill', u'flee', u'condemn', u'destroy', u'threaten', u'pray', u'enemies', u'confront', u'refusing', u'lest']
+descriptor 5:
+[u'bathe', u'downstairs', u'beckoned', u'comfortably', u'upstairs', u'comforts', u'tucked', u'linger', u'bathed', u'spacious']
+descriptor 6:
+[u'knew', u'talked', u'wondered', u'convinced', u'daughter', u'told', u'husband', u'dad', u'asked', u'worried']
+descriptor 7:
+[u'ahhhhhh', u'ummmm', u'mmmmmmm', u'ummm', u'yesss', u'ohhhh', u'uhhh', u'ohhh', u'ahhhh', u'ahhh']
+descriptor 8:
+[u'uhh', u'alright', u'sayin', u'yup', u'nah', u'huh', u'heh', u'yah', u'yep', u'hah']
+descriptor 9:
+[u'sir', u'capt', u'launcelot', u'brigadier', u'admiral', u'bedevere', u'colonel', u'madam', u'hiya', u'excellency']
+descriptor 10:
+[u'insinuating', u'implying', u'ludicrous', u'asinine', u'chickened', u'caved', u'supposin', u'alarmist', u'laughable', u'horseshit']
+descriptor 11:
+[u'excellent', u'nice', u'terrific', u'exceptionally', u'superb', u'fantastic', u'good', u'wonderfully', u'enjoyable', u'amazingly']
+descriptor 12:
+[u'pussy', u'ass', u'cock', u'butt', u'tits', u'hairy', u'chubby', u'sexy', u'blonde', u'booty']
+descriptor 13:
+[u'presume', u'supposing', u'doubted', u'prescribe', u'prosecute', u'disclose', u'ordinarily', u'testified', u'consulted', u'persuaded']
+descriptor 14:
+[u'wrists', u'shoved', u'ankles', u'slid', u'jerked', u'knees', u'stabbed', u'rubbing', u'handcuffed', u'forehead']
+descriptor 15:
+[u'sword', u'commander', u'squadron', u'sailed', u'legend', u'dragon', u'ships', u'captain', u'bronze', u'knights']
+descriptor 16:
+[u'metaphasic', u'trilithium', u'broth', u'molasses', u'thorpey', u'flavored', u'thuggees', u'bicarbonate', u'gelatin', u'mayonnaise']
+descriptor 17:
+[u'schematics', u'anyroad', u'cinch', u'hangers', u'pliers', u'holster', u'nicked', u'welded', u'lestercorp', u'alternator']
+descriptor 18:
+[u'liaison', u'dispatcher', u'supervisor', u'communications', u'telephone', u'officer', u'surveillance', u'investigator', u'administrator', u'switchboard']
+descriptor 19:
+[u'walkway', u'promenade', u'courtyard', u'quaint', u'staircase', u'hillside', u'enchanting', u'doorway', u'waterfront', u'stately']
+descriptor 20:
+[u'evacuated', u'collapsed', u'relocated', u'recovered', u'resulted', u'kilometers', u'reported', u'fled', u'disappeared', u'remained']
+descriptor 21:
+[u'wanna', u'shit', u'know', u'fuckin', u'dumbass', u'bullshit', u'morons', u'want', u'anybody', u'moron']
+descriptor 22:
+[u'understanding', u'belief', u'inherent', u'existence', u'knowledge', u'aspects', u'beings', u'nature', u'humanity', u'creation']
+descriptor 23:
+[u'adjust', u'accelerate', u'manually', u'necessary', u'proceed', u'allow', u'stabilize', u'easier', u'reduce', u'adjusting']
+descriptor 24:
+[u'around', u'going', u'far', u'less', u'run', u'across', u'running', u'start', u'operate', u'lot']
+descriptor 25:
+[u'dollars', u'francs', u'payment', u'measly', u'payments', u'invoice', u'billing', u'refund', u'cheque', u'loaning']
+descriptor 26:
+[u'resignation', u'delegation', u'congratulate', u'committee', u'counsel', u'secretary', u'treasurer', u'behalf', u'chairman', u'inaugural']
+descriptor 27:
+[u'ate', u'night', u'morning', u'heard', u'woke', u'wondered', u'noticed', u'weird', u'evening', u'eaten']
+descriptor 28:
+[u'frightening', u'terrifying', u'absurd', u'ludicrous', u'laughable', u'hopeless', u'illogical', u'seeming', u'comical', u'grotesque']
+descriptor 29:
+[u'sultenfuss', u'dearest', u'lullaby', u'godmother', u'teschmacher', u'sorsha', u'whorfin', u'granddaughter', u'grandmama', u'sooze']
+writing trajectories...
+done with epoch:  1  cost = 537.7635714901402 time:  380.508666039
+descriptor 0:
+[u'fucks', u'stepmother', u'fucker', u'lesbos', u'stepfather', u'fucken', u'suckin', u'stepdad', u'cannibal', u'housewife']
+descriptor 1:
+[u'tomorra', u'bodwin', u'whatsamatter', u'headin', u'didya', u'jankis', u'teschmacher', u'whattya', u'rasczak', u'mayol']
+descriptor 2:
+[u'gift', u'purchase', u'holiday', u'shopping', u'shop', u'lunch', u'dinner', u'offers', u'rental', u'discount']
+descriptor 3:
+[u'gunmen', u'ambushed', u'smuggle', u'smuggled', u'policemen', u'grenades', u'robbers', u'nabbed', u'vanderhof', u'stormed']
+descriptor 4:
+[u'kill', u'flee', u'condemn', u'destroy', u'threaten', u'pray', u'enemies', u'avenge', u'confront', u'defend']
+descriptor 5:
+[u'bathe', u'downstairs', u'comfortably', u'spacious', u'beckoned', u'bathed', u'upstairs', u'tucked', u'comforts', u'comfy']
+descriptor 6:
+[u'knew', u'talked', u'daughter', u'husband', u'wondered', u'dad', u'convinced', u'told', u'father', u'sister']
+descriptor 7:
+[u'ummm', u'ahhhhhh', u'ummmm', u'yesss', u'mmmmmmm', u'ahhh', u'ahhhh', u'ohhh', u'ohhhh', u'uhhh']
+descriptor 8:
+[u'alright', u'uhh', u'sayin', u'yup', u'huh', u'nah', u'yah', u'heh', u'yep', u'yeah']
+descriptor 9:
+[u'sir', u'capt', u'admiral', u'brigadier', u'colonel', u'captain', u'launcelot', u'madam', u'hiya', u'excellency']
+descriptor 10:
+[u'insinuating', u'asinine', u'implying', u'alarmist', u'ludicrous', u'criticizing', u'chickened', u'caved', u'horseshit', u'cockamamie']
+descriptor 11:
+[u'excellent', u'terrific', u'nice', u'exceptionally', u'superb', u'fantastic', u'wonderfully', u'good', u'amazingly', u'incredibly']
+descriptor 12:
+[u'pussy', u'ass', u'cock', u'sexy', u'hairy', u'chubby', u'tits', u'blonde', u'brunette', u'butt']
+descriptor 13:
+[u'presume', u'supposing', u'prescribe', u'ordinarily', u'disclose', u'doubted', u'prosecute', u'advised', u'defendant', u'deem']
+descriptor 14:
+[u'wrists', u'shoved', u'slid', u'knees', u'jerked', u'forehead', u'ankles', u'rubbing', u'torso', u'slamming']
+descriptor 15:
+[u'sword', u'commander', u'squadron', u'legend', u'dragon', u'sailed', u'captain', u'bronze', u'ruler', u'captured']
+descriptor 16:
+[u'metaphasic', u'trilithium', u'molasses', u'broth', u'bicarbonate', u'thorpey', u'flavored', u'thuggees', u'consarn', u'matuschka']
+descriptor 17:
+[u'schematics', u'hangers', u'mended', u'cinch', u'pliers', u'welded', u'gasket', u'alternator', u'nicked', u'pulleys']
+descriptor 18:
+[u'liaison', u'dispatcher', u'supervisor', u'telephone', u'communications', u'surveillance', u'investigator', u'officer', u'technician', u'dispatch']
+descriptor 19:
+[u'walkway', u'courtyard', u'promenade', u'hillside', u'quaint', u'staircase', u'doorway', u'enchanting', u'alleyway', u'boulevard']
+descriptor 20:
+[u'evacuated', u'collapsed', u'recovered', u'reported', u'relocated', u'resulted', u'fled', u'disappeared', u'deaths', u'kilometers']
+descriptor 21:
+[u'wanna', u'shit', u'know', u'fuckin', u'bullshit', u'dumbass', u'want', u'sayin', u'morons', u'moron']
+descriptor 22:
+[u'understanding', u'belief', u'inherent', u'existence', u'knowledge', u'aspects', u'beings', u'spiritual', u'humanity', u'creation']
+descriptor 23:
+[u'adjust', u'accelerate', u'proceed', u'necessary', u'manually', u'initiate', u'stabilize', u'allow', u'activate', u'safely']
+descriptor 24:
+[u'around', u'going', u'less', u'far', u'operate', u'running', u'across', u'run', u'people', u'move']
+descriptor 25:
+[u'measly', u'francs', u'dollars', u'payment', u'invoice', u'cheque', u'refund', u'payments', u'billing', u'euros']
+descriptor 26:
+[u'delegation', u'resignation', u'congratulate', u'counsel', u'committee', u'secretary', u'behalf', u'appointment', u'treasurer', u'chairman']
+descriptor 27:
+[u'ate', u'night', u'morning', u'heard', u'evening', u'woke', u'noticed', u'wondered', u'slept', u'waking']
+descriptor 28:
+[u'frightening', u'absurd', u'ludicrous', u'laughable', u'terrifying', u'comical', u'hopeless', u'seeming', u'illogical', u'grotesque']
+descriptor 29:
+[u'sultenfuss', u'teschmacher', u'sorsha', u'lullaby', u'sooze', u'dearest', u'whorfin', u'sheronda', u'goodnight', u'godmother']
+writing trajectories...
+done with epoch:  2  cost = 532.048205055554 time:  363.144995928
