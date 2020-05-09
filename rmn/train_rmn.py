@@ -115,16 +115,15 @@ if __name__ == '__main__':
     d_hidden = 50
 
     # number of descriptors
-    # num_descs = 30
-    num_descs = 20
+    num_descs = 25
 
     # number of negative samples per relationship
     num_negs = 50
 
     # word dropout probability
-    p_drop = 0.75
+    p_drop = 0.7
     
-    n_epochs = 15
+    n_epochs = 20
     lr = 0.001
     eps = 1e-6
     num_chars = len(cmap)
@@ -180,7 +179,7 @@ if __name__ == '__main__':
                 desc = R[ind] / np.linalg.norm(R[ind])
                 sims = We.dot(desc.T)
                 ordered_words = np.argsort(sims)[::-1]
-                desc_list = [ revmap[w] for w in ordered_words[:10]]
+                desc_list = [revmap[w] for w in ordered_words[:15]]
                 log.write(' '.join(desc_list) + '\n')
                 print 'descriptor %d:' % ind
                 print desc_list
