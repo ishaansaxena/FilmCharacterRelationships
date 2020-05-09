@@ -4,7 +4,7 @@
 ## Script functions 
 
 extractCharacterVerbs.py: Extracts the verbs used by each character in the dataset 
-via dependancy parsing and coreference resolution using SpaCy. 
+via dependancy parsing and coreference resolution using SpaCy. Download 'GoogleNews-vectors-negative300.bin' to run this script. 
 
 extractMetadataForRMN.py: Extracted the metadata, span, movie and character embeddings, for the Relationship Modeling Network
 proposed in the paper "Feuding Families and Former Friends"" written by Mohit Iyyer et al. 
