@@ -1,5 +1,7 @@
 # FilmCharacterRelationship
-  This repository contains the scripts and data for our project. 
+This repository contains the scripts and data for our project. 
+  
+The [report](https://ishaansaxena.github.io/assets/files/FPA_Report.pdf) and [slides](https://ishaansaxena.github.io/assets/files/FPA_Presentation.pdf) are hosted on my website.  
   
 ## Folder Structure
 - data/: contains some of the required data
